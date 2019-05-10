@@ -12075,13 +12075,10 @@ exports.default = RouteWithSubRoutes;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-var website_name = exports.website_name = 'Deriv.app';
+var website_name = exports.website_name = 'DTrader';
 var default_title = exports.default_title = website_name;
-var platform_names = exports.platform_names = {
-    'Deriv.app': 'DTrader'
-};
 
 /***/ }),
 
@@ -13310,7 +13307,7 @@ var InstallPWA = function InstallPWA(_ref) {
         _react2.default.createElement(
             'p',
             null,
-            (0, _localize.localize)('Install [_1] app?', _appConfig.platform_names[_appConfig.website_name])
+            (0, _localize.localize)('Install [_1] app?', _appConfig.website_name)
         ),
         _react2.default.createElement(_button2.default, {
             className: 'btn--secondary btn--secondary--orange btn--link notification-bar__button',
