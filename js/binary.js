@@ -11483,7 +11483,7 @@ var MenuLinks = function MenuLinks(_ref) {
         null,
         _react2.default.createElement(
             'div',
-            { className: 'header__navbar-icons header__navbar-icons--deriv-logo' },
+            { className: 'header__navbar-icons header__navbar-icons--binary-logo' },
             _react2.default.createElement(_symbol2.default, { width: '30px', height: '30px' })
         ),
         !!items.length && _react2.default.createElement(
