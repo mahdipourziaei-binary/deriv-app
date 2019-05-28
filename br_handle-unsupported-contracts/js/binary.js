@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"096129f91c3362b96f2f","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"376e158bae33d4862480","open_positions~profit_table~statement":"6bf702106e721254e050","open_positions":"1b6e964e9d92b82c75af","profit_table":"0a6420fb2e512b7183b6","statement":"d14114fe5d1390379a54","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"1f8f9d39e73c7b3bdb01","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"096129f91c3362b96f2f","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"9700b8c94df8d16b8fa8","open_positions":"60cb81c1f4dfab4742be","profit_table":"cc44b1529b97025e6b61","statement":"74d6a4d8a72e2fa858d9","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"1f8f9d39e73c7b3bdb01","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -12985,6 +12985,7 @@ exports.default = RouteWithSubRoutes;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var website_domain = exports.website_domain = 'Deriv.app';
 var website_name = exports.website_name = 'Deriv';
 var default_title = exports.default_title = website_name;
 
@@ -20623,6 +20624,24 @@ var IconTradeType = function IconTradeType(_ref) {
             case 'calle_light':
                 IconType = _react2.default.createElement('path', { d: 'M6.671 8l3.422-4.79A.5.5 0 0 1 10.5 3h1.79l-1.144-1.147a.5.5 0 1 1 .708-.706l1.963 1.966a.499.499 0 0 1 0 .774l-1.963 1.966a.5.5 0 0 1-.708-.706L12.291 4h-1.534L7.9 8h4.6a.5.5 0 1 1 0 1H7.186l-1.28 1.79a.5.5 0 0 1-.76.064l-2-2A.498.498 0 0 1 3.5 8h3.171zm-.714 1h-1.25l.73.73.52-.73zm6.897-2.147a.5.5 0 0 1-.708-.706l1.997-2a.5.5 0 1 1 .707.706l-1.996 2z', className: 'color1-fill', fill: '#2A3052', fillRule: 'evenodd' });
                 break;
+            case 'callspread':
+                IconType = _react2.default.createElement(
+                    'g',
+                    { fill: 'none', fillRule: 'evenodd' },
+                    _react2.default.createElement('path', { d: 'M0 0h16v16H0z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', fill: '#2A3052', d: 'M0 0h6.56v1.99619048H0zM0 14h16v1.99619048H0zM15.9838393 7h-4.9876488L9 8.99619048h3.1666964l-.5714285.57904762c-.3769008.37219104-.5890419.8798254-.5890419 1.4095238 0 .5296984.2121411 1.0373328.5890419 1.4095238l4.3885714-4.39619046V7z' }),
+                    _react2.default.createElement('path', { d: 'M7.74095238 0v.34285714c-.00004229.4424804.17728182.86651358.49230322 1.17723923.31502139.31072565.74144914.48221135 1.18388726.47609411h1.52380954L5.82857143 7.06285714H0v1.99619048h6.65142857l5.65333333-5.65333333v2.28571428h1.9961905V0H7.74095238z', fill: '#F93' })
+                );
+                break;
+            case 'putspread':
+                IconType = _react2.default.createElement(
+                    'g',
+                    { fill: 'none', fillRule: 'evenodd' },
+                    _react2.default.createElement('path', { d: 'M0 0h16v16H0z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', fill: '#2A3052', d: 'M0 16.0000005h6.56v-1.99619048H0zM0 2.00000048h16V.00381H0zM15.9838393 9.00000048h-4.9876488L9 7.00381h3.1666964l-.5714285-.57904762c-.3769008-.37219104-.5890419-.87982544-.5890419-1.40952381 0-.52969836.2121411-1.03733276.5890419-1.40952381l4.3885714 4.39619048v.99809524z' }),
+                    _react2.default.createElement('path', { d: 'M7.74095238 16.0000005v-.34285714c-.00004229-.4424804.17728182-.86651358.49230322-1.17723922.31502139-.31072565.74144914-.48221136 1.18388726-.47609411h1.52380954L5.82857143 8.9371434H0V6.9409529h6.65142857l5.65333333 5.6533334V10.308572h1.9961905v5.6914285H7.74095238z', fill: '#F93' })
+                );
+                break;
             case 'digitdiff':
                 IconType = _react2.default.createElement(
                     'g',
@@ -20827,6 +20846,66 @@ var IconTradeType = function IconTradeType(_ref) {
                     _react2.default.createElement('path', { d: 'M11.167 7.5L9.3 6.1a.5.5 0 0 0-.716.123L6.955 8.665 4.885 6.18a.5.5 0 0 0-.739-.034L2.293 8H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .354-.146L4.466 7.24l2.15 2.58a.5.5 0 0 0 .8-.044l1.707-2.56L10.7 8.4a.5.5 0 0 0 .3.1h3.5a.5.5 0 1 0 0-1h-3.333z', className: 'color1-fill', fill: '#2A3052', fillRule: 'nonzero' })
                 );
                 break;
+            case 'resetcall':
+                IconType = _react2.default.createElement(
+                    'g',
+                    { fill: 'none', fillRule: 'evenodd' },
+                    _react2.default.createElement('path', { d: 'M0 0h16v16H0z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', fill: '#2A3052', d: 'M5 9.39630839l2-2.00345125V0H5zM0 0h4v1.99619048H0zM7 16v-5.5906593l-2 1.9188191V16zM8.87087912 0c0 1.18801912.96307978 2.1510989 2.15109888 2.1510989h1.2527473L7 7.39285714v3.01648356l6.8489011-6.77472532v1.35989011c0 1.18801912.9630798 2.15109891 2.1510989 2.15109891V0H8.87087912z' }),
+                    _react2.default.createElement('path', { fill: '#F93', d: 'M0 11h3.33096617l2.08398134-2H0z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', fill: '#2A3052', d: 'M9 14h7v1.99619048H9zM0 14h4v1.99619048H0z' })
+                );
+                break;
+            case 'resetput':
+                IconType = _react2.default.createElement(
+                    'g',
+                    { fill: 'none', fillRule: 'evenodd' },
+                    _react2.default.createElement('path', { d: 'M0 0h16v16H0z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', fill: '#2A3052', d: 'M5 6.6036916l2 2.0034513V16H5zM0 16h4v-1.99619048H0zM7 0v5.59065934L5 3.67184015V0zM8.87087912 16c0-1.18801912.96307978-2.1510989 2.15109888-2.1510989h1.2527473L7 8.6071428V5.5906593l6.8489011 6.77472531V11.0054945c0-1.1880192.9630798-2.1510989 2.1510989-2.1510989V16H8.87087912z' }),
+                    _react2.default.createElement('path', { fill: '#F93', d: 'M0 5h3.33096617l2.08398134 2H0z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', fill: '#2A3052', d: 'M9 2h7V.00380952H9zM0 2h4V.00380952H0z' })
+                );
+                break;
+            case 'runhigh':
+                IconType = _react2.default.createElement(
+                    'g',
+                    { fill: 'none', fillRule: 'evenodd' },
+                    _react2.default.createElement('path', { d: 'M0 0h16v16H0z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', fill: '#2A3052', d: 'M10 8h1.99619048v8H10zM6 12h1.99619048v4H6z' }),
+                    _react2.default.createElement('path', { fill: '#F93', d: 'M0 11.287619h1.90625L4 9.28761905H0z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', d: 'M5.37904762 0C5.38318978 1.09357012 6.26645384 1.98023135 7.36 1.98857143h1.15809524L4 6.47619048v2.78095238L9.96571429 3.36v1.28c0 1.10246556.89372491 1.99619048 1.99619051 1.99619048V.03047619L5.37904762 0zM14 0h1.99619048v16H14zM2 14h1.99619048v1.99619048H2z', fill: '#2A3052' })
+                );
+                break;
+            case 'runlow':
+                IconType = _react2.default.createElement(
+                    'g',
+                    { fill: 'none', fillRule: 'evenodd' },
+                    _react2.default.createElement('path', { d: 'M0 0h16v16H0z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', fill: '#2A3052', d: 'M0 0h1.99619048v16H0zM4 5h1.99619048v11H4zM8 13h1.99619048v3H8zM12 14h1.99619048v1.99619048H12z' }),
+                    _react2.default.createElement('path', { fill: '#F93', d: 'M4 2V0h1.79876797L8 2z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', d: 'M9.36380952 11.28c0-1.0982577.89031378-1.98857143 1.98857148-1.98857143h1.1580952L8 4.78095238V2l5.9657143 5.89714286V6.64761905c-.0020258-.5287208.2065892-1.03648127.5797385-1.41106024.3731492-.37457896.8801082-.58513412 1.4088329-.58513024v6.60571433L9.36380952 11.28z', fill: '#2A3052' })
+                );
+                break;
+            case 'tickhigh':
+                IconType = _react2.default.createElement(
+                    'g',
+                    { fill: 'none', fillRule: 'evenodd' },
+                    _react2.default.createElement('path', { d: 'M0 0h16v16H0z' }),
+                    _react2.default.createElement('path', { fill: '#F93', d: 'M3 10.1060363l5-4.39964528V3L3 7.39914863z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', d: 'M9.37473348 12c0-1.0697157.89686242-1.9368915 2.00319832-1.9368915h1.1609808L8 5.70639102V3l5.9968017 5.73336388V7.51494674C13.997096 6.44534895 14.893786 5.57833971 16 5.57805521V12H9.37473348zM9.92783367 0v.0005315L7.94473508 1.9649216 5.96163649.00053149V0H0v2h16V0zM0 14h16v2H0z', fill: '#2A3052' }),
+                    _react2.default.createElement('path', { d: 'M0 8.37966868l3 1.72636762V7.39914863C1.0481655 6.24719915.0481655 5.65792982 0 5.63134064v2.74832804z', fill: '#F93' })
+                );
+                break;
+            case 'ticklow':
+                IconType = _react2.default.createElement(
+                    'g',
+                    { fill: 'none', fillRule: 'evenodd' },
+                    _react2.default.createElement('path', { d: 'M0 0h16v16H0z' }),
+                    _react2.default.createElement('path', { fill: '#F93', d: 'M3 5.8939637l5 4.39964528V13L3 8.6008514z' }),
+                    _react2.default.createElement('path', { className: 'color1-fill', d: 'M9.37473348 4c0 1.0697157.89686242 1.9368915 2.00319832 1.9368915h1.1609808L8 10.29360898V13l5.9968017-5.73336388v1.21841714C13.997096 9.55465105 14.893786 10.42166029 16 10.42194479V4H9.37473348zM9.92783367 16v-.0005315l-1.98309859-1.9643901-1.98309859 1.9643901V16H0v-2h16v2zM0 2h16V0H0z', fill: '#2A3052', fillRule: 'nonzero' }),
+                    _react2.default.createElement('path', { d: 'M0 7.62033136L3 5.8939637v2.70688771C1.0481655 9.75280089.0481655 10.34207022 0 10.3686594V7.62033136z', fill: '#F93' })
+                );
+                break;
             case 'upordown':
                 IconType = _react2.default.createElement(
                     'g',
@@ -21024,13 +21103,13 @@ exports.IconPriceMove = IconPriceMove;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.getContractTypePosition = exports.getContractTypeDisplay = undefined;
+exports.getContractTypePosition = exports.getContractTypeDisplay = exports.getUnsupportedContracts = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _localize = __webpack_require__(/*! ../../_common/localize */ "./src/javascript/_common/localize.js");
 
-var getUnsupportedContracts = function getUnsupportedContracts() {
+var getUnsupportedContracts = exports.getUnsupportedContracts = function getUnsupportedContracts() {
     return {
         EXPIRYMISS: {
             name: (0, _localize.localize)('Ends Outside'),
@@ -30073,6 +30152,15 @@ var PortfolioStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _de
                 _Services.WS.subscribeProposalOpenContract(contract_id.toString(), this.proposalOpenContractHandler, false);
             } else if (act === 'sell') {
                 var i = this.getPositionIndexById(contract_id);
+
+                // Currently, if the contract has ended before the response is sent
+                // the Portfolio API returns an empty `contracts` array.
+                // This causes the contract to not be pushed to the `positions` property here.
+                // The statement below prevents accessing undefined values caused by the above explanation.
+                if (i === -1) {
+                    return;
+                }
+
                 this.positions[i].is_loading = true;
                 _Services.WS.subscribeProposalOpenContract(contract_id.toString(), this.populateResultDetails, false);
             }
