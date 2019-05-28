@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"096129f91c3362b96f2f","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"9700b8c94df8d16b8fa8","open_positions":"8e92948076c4b22632b1","profit_table":"9fea26b2d9fcce7f9882","statement":"d189a0471b0311d64f9e","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"1f8f9d39e73c7b3bdb01","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"404":"404","account_password":"account_password","api_token":"api_token","authorized_application":"authorized_application","cashier_password":"cashier_password","contract":"contract","financial_assessment":"financial_assessment","limits":"limits","login_history":"login_history","open_positions~portfolio~profit_table~statement":"open_positions~portfolio~profit_table~statement","open_positions~profit_table~statement":"open_positions~profit_table~statement","open_positions":"open_positions","profit_table":"profit_table","statement":"statement","portfolio":"portfolio","personal_details":"personal_details","reports":"reports","self_exclusion":"self_exclusion","settings":"settings","vendors~smart_chart":"vendors~smart_chart","smart_chart":"smart_chart"}[chunkId]||chunkId) + "-" + {"404":"fdd90647aa54964fb1ed","account_password":"e80bbb197cad5fe3d04b","api_token":"455796411755cc9d240f","authorized_application":"87b6b5bc246c480c716e","cashier_password":"40a473d15da490ee7be5","contract":"096129f91c3362b96f2f","financial_assessment":"f2b2875bd22a7717c1ad","limits":"b108abb5bcd4b46ba7b5","login_history":"dcb5548da21ab243acf1","open_positions~portfolio~profit_table~statement":"1976ff7d31c98be81a38","open_positions~profit_table~statement":"9700b8c94df8d16b8fa8","open_positions":"8ef0fd58ff8a5d359639","profit_table":"ca85ffb65cd2fa8da613","statement":"c232e010d53868b370b1","portfolio":"28117780a46b8812a563","personal_details":"3f27d12d238da8ef9393","reports":"0914d401b27e7a7397a7","self_exclusion":"7b24d88cd6b9f04ae3d0","settings":"ee411577a3c3a94f2f4e","vendors~smart_chart":"1f8f9d39e73c7b3bdb01","smart_chart":"d17c6f4b371d99b2407d"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -6209,6 +6209,7 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                 id = _props.id,
                 is_loading = _props.is_loading,
                 is_sell_requested = _props.is_sell_requested,
+                is_unsupported = _props.is_unsupported,
                 is_valid_to_sell = _props.is_valid_to_sell,
                 profit_loss = _props.profit_loss,
                 onClickSell = _props.onClickSell,
@@ -6219,6 +6220,7 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                 sell_time = _props.sell_time,
                 server_time = _props.server_time,
                 status = _props.status,
+                toggleUnsupportedContractModal = _props.toggleUnsupportedContractModal,
                 type = _props.type;
 
             var percentage = (0, _helpers.getTimePercentage)(server_time, contract_info.purchase_time, contract_info.date_expiry);
@@ -6235,7 +6237,122 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                     result: result,
                     is_shade_visible: this.state.is_shade_on
                 }),
-                _react2.default.createElement(
+                is_unsupported ? _react2.default.createElement(
+                    'div',
+                    {
+                        className: (0, _classnames2.default)('positions-drawer-card', {
+                            'positions-drawer-card--active': parseInt(active_position) === id,
+                            'positions-drawer-card--green': profit_loss > 0 && !result,
+                            'positions-drawer-card--red': profit_loss < 0 && !result
+                        }),
+                        onClick: function onClick() {
+                            return toggleUnsupportedContractModal(true);
+                        }
+                    },
+                    _react2.default.createElement(
+                        _react2.default.Fragment,
+                        null,
+                        _react2.default.createElement(
+                            'div',
+                            { className: (0, _classnames2.default)('positions-drawer-card__grid', 'positions-drawer-card__grid-underlying-trade')
+                            },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'positions-drawer-card__underlying-name' },
+                                _react2.default.createElement(_underlyingIcon.UnderlyingIcon, { market: contract_info.underlying }),
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'positions-drawer-card__symbol' },
+                                    contract_info.display_name
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'positions-drawer-card__type' },
+                                _react2.default.createElement(_contractTypeCell2.default, { type: type })
+                            )
+                        ),
+                        _react2.default.createElement(_ProgressSlider2.default, {
+                            is_loading: is_loading,
+                            remaining_time: contract_info.date_expiry,
+                            percentage: percentage,
+                            current_tick: current_tick,
+                            ticks_count: contract_info.tick_count,
+                            has_result: !!result
+                        }),
+                        _react2.default.createElement(
+                            'div',
+                            { className: (0, _classnames2.default)('positions-drawer-card__grid', 'positions-drawer-card__grid-profit-payout')
+                            },
+                            _react2.default.createElement(
+                                'div',
+                                { className: (0, _classnames2.default)('positions-drawer-card__profit-loss', 'positions-drawer-card__profit-loss-label')
+                                },
+                                result ? (0, _localize.localize)('Profit/Loss:') : (0, _localize.localize)('Potential Profit/Loss:')
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: (0, _classnames2.default)('positions-drawer-card__indicative', 'positions-drawer-card__indicative-label')
+                                },
+                                !result ? (0, _localize.localize)('Indicative Price:') : (0, _localize.localize)('Payout:')
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: (0, _classnames2.default)('positions-drawer-card__profit-loss', {
+                                        'positions-drawer-card__profit-loss--negative': profit_loss < 0,
+                                        'positions-drawer-card__profit-loss--positive': profit_loss > 0
+                                    })
+                                },
+                                _react2.default.createElement(_money2.default, { amount: Math.abs(profit_loss), currency: currency }),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: (0, _classnames2.default)('positions-drawer-card__indicative--movement', {
+                                            'positions-drawer-card__indicative--movement-complete': !!result
+                                        })
+                                    },
+                                    _react2.default.createElement(_iconPriceMove.IconPriceMove, {
+                                        type: status !== 'complete' ? status : null
+                                    })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'positions-drawer-card__indicative' },
+                                _react2.default.createElement(_money2.default, { amount: sell_price || indicative, currency: currency }),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: (0, _classnames2.default)('positions-drawer-card__indicative--movement', {
+                                            'positions-drawer-card__indicative--movement-complete': !!result
+                                        })
+                                    },
+                                    _react2.default.createElement(_iconPriceMove.IconPriceMove, {
+                                        type: status !== 'complete' ? status : null
+                                    })
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'positions-drawer-card__purchase-price' },
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'positions-drawer-card__purchase-label' },
+                                (0, _localize.localize)('Purchase price')
+                            ),
+                            _react2.default.createElement(_money2.default, { amount: contract_info.buy_price, currency: currency })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'positions-drawer-card__payout-price' },
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'positions-drawer-card__payout-label' },
+                                (0, _localize.localize)('Potential payout')
+                            ),
+                            _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency })
+                        )
+                    )
+                ) : _react2.default.createElement(
                     _contractLink2.default,
                     {
                         className: (0, _classnames2.default)('positions-drawer-card', {
@@ -6405,6 +6522,7 @@ PositionsDrawerCard.propTypes = {
     indicative: _propTypes2.default.number,
     is_loading: _propTypes2.default.bool,
     is_sell_requested: _propTypes2.default.bool,
+    is_unsupported: _propTypes2.default.bool,
     is_valid_to_sell: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.bool]),
     onClickRemove: _propTypes2.default.func,
     onClickSell: _propTypes2.default.func,
@@ -6414,6 +6532,7 @@ PositionsDrawerCard.propTypes = {
     sell_time: _propTypes2.default.number,
     server_time: _propTypes2.default.object,
     status: _propTypes2.default.string,
+    toggleUnsupportedContractModal: _propTypes2.default.func,
     type: _propTypes2.default.string
 };
 
@@ -6519,6 +6638,7 @@ var PositionsDrawer = function (_React$Component) {
                 onClickRemove = _props.onClickRemove,
                 openContract = _props.openContract,
                 toggleDrawer = _props.toggleDrawer,
+                toggleUnsupportedContractModal = _props.toggleUnsupportedContractModal,
                 server_time = _props.server_time;
 
 
@@ -6555,7 +6675,8 @@ var PositionsDrawer = function (_React$Component) {
                             openContract: openContract,
                             server_time: server_time,
                             key: portfolio_position.id,
-                            currency: currency
+                            currency: currency,
+                            toggleUnsupportedContractModal: toggleUnsupportedContractModal
                         }, portfolio_position))
                     );
                 });
@@ -6656,7 +6777,8 @@ exports.default = (0, _connect.connect)(function (_ref) {
         onMount: modules.portfolio.onMount,
         onUnmount: modules.portfolio.onUnmount,
         is_positions_drawer_on: ui.is_positions_drawer_on,
-        toggleDrawer: ui.togglePositionsDrawer
+        toggleDrawer: ui.togglePositionsDrawer,
+        toggleUnsupportedContractModal: ui.toggleUnsupportedContractModal
     };
 })(PositionsDrawer);
 
@@ -14981,6 +15103,120 @@ exports.default = (0, _connect.connect)(function (_ref2) {
 
 /***/ }),
 
+/***/ "./src/javascript/app/App/Containers/UnsupportedContractModal/index.js":
+/*!*****************************************************************************!*\
+  !*** ./src/javascript/app/App/Containers/UnsupportedContractModal/index.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = undefined;
+
+var _unsupportedContractModal = __webpack_require__(/*! ./unsupported-contract-modal.jsx */ "./src/javascript/app/App/Containers/UnsupportedContractModal/unsupported-contract-modal.jsx");
+
+var _unsupportedContractModal2 = _interopRequireDefault(_unsupportedContractModal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _unsupportedContractModal2.default;
+
+/***/ }),
+
+/***/ "./src/javascript/app/App/Containers/UnsupportedContractModal/unsupported-contract-modal.jsx":
+/*!***************************************************************************************************!*\
+  !*** ./src/javascript/app/App/Containers/UnsupportedContractModal/unsupported-contract-modal.jsx ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _localize = __webpack_require__(/*! ../../../../_common/localize */ "./src/javascript/_common/localize.js");
+
+var _url = __webpack_require__(/*! ../../../../_common/url */ "./src/javascript/_common/url.js");
+
+var _fullPageModal = __webpack_require__(/*! ../../Components/Elements/FullPageModal/full-page-modal.jsx */ "./src/javascript/app/App/Components/Elements/FullPageModal/full-page-modal.jsx");
+
+var _fullPageModal2 = _interopRequireDefault(_fullPageModal);
+
+var _localize2 = __webpack_require__(/*! ../../Components/Elements/localize.jsx */ "./src/javascript/app/App/Components/Elements/localize.jsx");
+
+var _localize3 = _interopRequireDefault(_localize2);
+
+var _connect = __webpack_require__(/*! ../../../Stores/connect */ "./src/javascript/app/Stores/connect.js");
+
+var _appConfig = __webpack_require__(/*! ../../Constants/app-config */ "./src/javascript/app/App/Constants/app-config.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var onClose = function onClose(ui) {
+    ui.toggleUnsupportedContractModal(false);
+};
+
+var _onConfirm = function _onConfirm(ui) {
+    window.open((0, _url.urlFor)('user/portfoliows', undefined, undefined, true), '_blank');
+    onClose(ui);
+};
+
+var UnsupportedContractModal = function UnsupportedContractModal(_ref) {
+    var is_visible = _ref.is_visible,
+        ui = _ref.ui;
+    return _react2.default.createElement(
+        _fullPageModal2.default,
+        {
+            title: (0, _localize.localize)('Whoops!'),
+            confirm_button_text: (0, _localize.localize)('Continue to Binary.com'),
+            cancel_button_text: (0, _localize.localize)('Back to trade page'),
+            onConfirm: function onConfirm() {
+                return _onConfirm(ui);
+            },
+            onCancel: function onCancel() {
+                return onClose(ui);
+            },
+            is_closed_on_cancel: true,
+            is_visible: is_visible
+        },
+        _react2.default.createElement(_localize3.default, {
+            str: 'This trade type is currently not supported on [_1]. Please go to Binary.com for details.',
+            replacers: { '1': _appConfig.website_name }
+        })
+    );
+};
+
+UnsupportedContractModal.propTypes = {
+    client: _propTypes2.default.object,
+    is_visible: _propTypes2.default.bool
+};
+
+exports.default = (0, _connect.connect)(function (_ref2) {
+    var ui = _ref2.ui;
+    return {
+        is_visible: ui.is_unsupported_contract_modal_visible,
+        ui: ui
+    };
+})(UnsupportedContractModal);
+
+/***/ }),
+
 /***/ "./src/javascript/app/App/Containers/Wip/index.js":
 /*!********************************************************!*\
   !*** ./src/javascript/app/App/Containers/Wip/index.js ***!
@@ -15464,6 +15700,10 @@ var _ServicesErrorModal = __webpack_require__(/*! ./Containers/ServicesErrorModa
 
 var _ServicesErrorModal2 = _interopRequireDefault(_ServicesErrorModal);
 
+var _UnsupportedContractModal = __webpack_require__(/*! ./Containers/UnsupportedContractModal */ "./src/javascript/app/App/Containers/UnsupportedContractModal/index.js");
+
+var _UnsupportedContractModal2 = _interopRequireDefault(_UnsupportedContractModal);
+
 var _Wip = __webpack_require__(/*! ./Containers/Wip */ "./src/javascript/app/App/Containers/Wip/index.js");
 
 var _Wip2 = _interopRequireDefault(_Wip);
@@ -15494,6 +15734,7 @@ var App = function App(_ref) {
                         _react2.default.createElement(_routes2.default, null),
                         _react2.default.createElement(_pushNotification2.default, null)
                     ),
+                    _react2.default.createElement(_UnsupportedContractModal2.default, null),
                     _react2.default.createElement(_DenialOfServiceModal2.default, null),
                     _react2.default.createElement(_MarketUnavailableModal2.default, null),
                     _react2.default.createElement(_ServicesErrorModal2.default, null)
@@ -29870,6 +30111,10 @@ var getDurationTime = exports.getDurationTime = function getDurationTime(contrac
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.formatPortfolioPosition = undefined;
+
+var _Constants = __webpack_require__(/*! ../../../../Constants */ "./src/javascript/app/Constants/index.js");
+
 var formatPortfolioPosition = exports.formatPortfolioPosition = function formatPortfolioPosition(portfolio_pos) {
     var purchase = parseFloat(portfolio_pos.buy_price);
     var payout = parseFloat(portfolio_pos.payout);
@@ -29882,7 +30127,8 @@ var formatPortfolioPosition = exports.formatPortfolioPosition = function formatP
         payout: payout,
         purchase: purchase,
         reference: +portfolio_pos.transaction_id,
-        type: portfolio_pos.contract_type
+        type: portfolio_pos.contract_type,
+        is_unsupported: !!(0, _Constants.getUnsupportedContracts)()[portfolio_pos.contract_type]
     };
 };
 
@@ -36363,7 +36609,7 @@ exports.default = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _dec29, _dec30, _dec31, _dec32, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _descriptor28, _descriptor29, _descriptor30, _descriptor31;
+var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _dec29, _dec30, _dec31, _dec32, _dec33, _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _descriptor28, _descriptor29, _descriptor30, _descriptor31, _descriptor32;
 
 var _mobx = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
 
@@ -36432,7 +36678,7 @@ function _initializerWarningHelper(descriptor, context) {
 
 var store_name = 'ui_store';
 
-var UIStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _mobx.action.bound, _dec4 = _mobx.action.bound, _dec5 = _mobx.action.bound, _dec6 = _mobx.action.bound, _dec7 = _mobx.action.bound, _dec8 = _mobx.action.bound, _dec9 = _mobx.action.bound, _dec10 = _mobx.action.bound, _dec11 = _mobx.action.bound, _dec12 = _mobx.action.bound, _dec13 = _mobx.action.bound, _dec14 = _mobx.action.bound, _dec15 = _mobx.action.bound, _dec16 = _mobx.action.bound, _dec17 = _mobx.action.bound, _dec18 = _mobx.action.bound, _dec19 = _mobx.action.bound, _dec20 = _mobx.action.bound, _dec21 = _mobx.action.bound, _dec22 = _mobx.action.bound, _dec23 = _mobx.action.bound, _dec24 = _mobx.action.bound, _dec25 = _mobx.action.bound, _dec26 = _mobx.action.bound, _dec27 = _mobx.action.bound, _dec28 = _mobx.action.bound, _dec29 = _mobx.action.bound, _dec30 = _mobx.action.bound, _dec31 = _mobx.action.bound, _dec32 = _mobx.action.bound, (_class = function (_BaseStore) {
+var UIStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _mobx.action.bound, _dec4 = _mobx.action.bound, _dec5 = _mobx.action.bound, _dec6 = _mobx.action.bound, _dec7 = _mobx.action.bound, _dec8 = _mobx.action.bound, _dec9 = _mobx.action.bound, _dec10 = _mobx.action.bound, _dec11 = _mobx.action.bound, _dec12 = _mobx.action.bound, _dec13 = _mobx.action.bound, _dec14 = _mobx.action.bound, _dec15 = _mobx.action.bound, _dec16 = _mobx.action.bound, _dec17 = _mobx.action.bound, _dec18 = _mobx.action.bound, _dec19 = _mobx.action.bound, _dec20 = _mobx.action.bound, _dec21 = _mobx.action.bound, _dec22 = _mobx.action.bound, _dec23 = _mobx.action.bound, _dec24 = _mobx.action.bound, _dec25 = _mobx.action.bound, _dec26 = _mobx.action.bound, _dec27 = _mobx.action.bound, _dec28 = _mobx.action.bound, _dec29 = _mobx.action.bound, _dec30 = _mobx.action.bound, _dec31 = _mobx.action.bound, _dec32 = _mobx.action.bound, _dec33 = _mobx.action.bound, (_class = function (_BaseStore) {
     _inherits(UIStore, _BaseStore);
 
     // PWA event and config
@@ -36442,6 +36688,10 @@ var UIStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _m
     // SmartCharts Controls
     // TODO: enable asset information
     // @observable is_chart_asset_info_visible = true;
+
+
+    // Purchase Controls
+    // @observable is_purchase_confirm_on    = false;
     function UIStore() {
         _classCallCheck(this, UIStore);
 
@@ -36473,43 +36723,45 @@ var UIStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _m
 
         _initDefineProp(_this, 'is_services_error_visible', _descriptor12, _this);
 
-        _initDefineProp(_this, 'is_chart_countdown_visible', _descriptor13, _this);
+        _initDefineProp(_this, 'is_unsupported_contract_modal_visible', _descriptor13, _this);
 
-        _initDefineProp(_this, 'is_chart_layout_default', _descriptor14, _this);
+        _initDefineProp(_this, 'is_chart_countdown_visible', _descriptor14, _this);
 
-        _initDefineProp(_this, 'pwa_prompt_event', _descriptor15, _this);
+        _initDefineProp(_this, 'is_chart_layout_default', _descriptor15, _this);
 
-        _initDefineProp(_this, 'screen_width', _descriptor16, _this);
+        _initDefineProp(_this, 'pwa_prompt_event', _descriptor16, _this);
 
-        _initDefineProp(_this, 'notification_messages', _descriptor17, _this);
+        _initDefineProp(_this, 'screen_width', _descriptor17, _this);
 
-        _initDefineProp(_this, 'push_notifications', _descriptor18, _this);
+        _initDefineProp(_this, 'notification_messages', _descriptor18, _this);
 
-        _initDefineProp(_this, 'is_advanced_duration', _descriptor19, _this);
+        _initDefineProp(_this, 'push_notifications', _descriptor19, _this);
 
-        _initDefineProp(_this, 'advanced_duration_unit', _descriptor20, _this);
+        _initDefineProp(_this, 'is_advanced_duration', _descriptor20, _this);
 
-        _initDefineProp(_this, 'advanced_expiry_type', _descriptor21, _this);
+        _initDefineProp(_this, 'advanced_duration_unit', _descriptor21, _this);
 
-        _initDefineProp(_this, 'simple_duration_unit', _descriptor22, _this);
+        _initDefineProp(_this, 'advanced_expiry_type', _descriptor22, _this);
 
-        _initDefineProp(_this, 'duration_t', _descriptor23, _this);
+        _initDefineProp(_this, 'simple_duration_unit', _descriptor23, _this);
 
-        _initDefineProp(_this, 'duration_s', _descriptor24, _this);
+        _initDefineProp(_this, 'duration_t', _descriptor24, _this);
 
-        _initDefineProp(_this, 'duration_m', _descriptor25, _this);
+        _initDefineProp(_this, 'duration_s', _descriptor25, _this);
 
-        _initDefineProp(_this, 'duration_h', _descriptor26, _this);
+        _initDefineProp(_this, 'duration_m', _descriptor26, _this);
 
-        _initDefineProp(_this, 'duration_d', _descriptor27, _this);
+        _initDefineProp(_this, 'duration_h', _descriptor27, _this);
 
-        _initDefineProp(_this, 'is_fully_blurred', _descriptor28, _this);
+        _initDefineProp(_this, 'duration_d', _descriptor28, _this);
 
-        _initDefineProp(_this, 'is_app_blurred', _descriptor29, _this);
+        _initDefineProp(_this, 'is_fully_blurred', _descriptor29, _this);
 
-        _initDefineProp(_this, 'is_route_blurred', _descriptor30, _this);
+        _initDefineProp(_this, 'is_app_blurred', _descriptor30, _this);
 
-        _initDefineProp(_this, 'show_positions_toggle', _descriptor31, _this);
+        _initDefineProp(_this, 'is_route_blurred', _descriptor31, _this);
+
+        _initDefineProp(_this, 'show_positions_toggle', _descriptor32, _this);
 
         _this.getDurationFromUnit = function (unit) {
             return _this['duration_' + unit];
@@ -36527,10 +36779,6 @@ var UIStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _m
         });
         return _this;
     }
-
-    // Purchase Controls
-    // @observable is_purchase_confirm_on    = false;
-
 
     _createClass(UIStore, [{
         key: 'onChangeUiStore',
@@ -36733,6 +36981,13 @@ var UIStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _m
             this.push_notifications = (0, _utility.unique)(this.push_notifications, 'msg_type');
         }
     }, {
+        key: 'toggleUnsupportedContractModal',
+        value: function toggleUnsupportedContractModal() {
+            var state_change = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : !this.is_unsupported_contract_modal_visible;
+
+            this.is_unsupported_contract_modal_visible = state_change;
+        }
+    }, {
         key: 'is_mobile',
         get: function get() {
             return this.screen_width <= _ui.MAX_MOBILE_WIDTH;
@@ -36805,102 +37060,107 @@ var UIStore = (_dec = _mobx.action.bound, _dec2 = _mobx.action.bound, _dec3 = _m
     initializer: function initializer() {
         return false;
     }
-}), _descriptor13 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_countdown_visible', [_mobx.observable], {
+}), _descriptor13 = _applyDecoratedDescriptor(_class.prototype, 'is_unsupported_contract_modal_visible', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor14 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_layout_default', [_mobx.observable], {
+}), _descriptor14 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_countdown_visible', [_mobx.observable], {
+    enumerable: true,
+    initializer: function initializer() {
+        return false;
+    }
+}), _descriptor15 = _applyDecoratedDescriptor(_class.prototype, 'is_chart_layout_default', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return true;
     }
-}), _descriptor15 = _applyDecoratedDescriptor(_class.prototype, 'pwa_prompt_event', [_mobx.observable], {
+}), _descriptor16 = _applyDecoratedDescriptor(_class.prototype, 'pwa_prompt_event', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return null;
     }
-}), _descriptor16 = _applyDecoratedDescriptor(_class.prototype, 'screen_width', [_mobx.observable], {
+}), _descriptor17 = _applyDecoratedDescriptor(_class.prototype, 'screen_width', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return window.innerWidth;
     }
-}), _descriptor17 = _applyDecoratedDescriptor(_class.prototype, 'notification_messages', [_mobx.observable], {
+}), _descriptor18 = _applyDecoratedDescriptor(_class.prototype, 'notification_messages', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return [];
     }
-}), _descriptor18 = _applyDecoratedDescriptor(_class.prototype, 'push_notifications', [_mobx.observable], {
+}), _descriptor19 = _applyDecoratedDescriptor(_class.prototype, 'push_notifications', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return [];
     }
-}), _descriptor19 = _applyDecoratedDescriptor(_class.prototype, 'is_advanced_duration', [_mobx.observable], {
+}), _descriptor20 = _applyDecoratedDescriptor(_class.prototype, 'is_advanced_duration', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor20 = _applyDecoratedDescriptor(_class.prototype, 'advanced_duration_unit', [_mobx.observable], {
+}), _descriptor21 = _applyDecoratedDescriptor(_class.prototype, 'advanced_duration_unit', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 't';
     }
-}), _descriptor21 = _applyDecoratedDescriptor(_class.prototype, 'advanced_expiry_type', [_mobx.observable], {
+}), _descriptor22 = _applyDecoratedDescriptor(_class.prototype, 'advanced_expiry_type', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 'duration';
     }
-}), _descriptor22 = _applyDecoratedDescriptor(_class.prototype, 'simple_duration_unit', [_mobx.observable], {
+}), _descriptor23 = _applyDecoratedDescriptor(_class.prototype, 'simple_duration_unit', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 't';
     }
-}), _descriptor23 = _applyDecoratedDescriptor(_class.prototype, 'duration_t', [_mobx.observable], {
+}), _descriptor24 = _applyDecoratedDescriptor(_class.prototype, 'duration_t', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 5;
     }
-}), _descriptor24 = _applyDecoratedDescriptor(_class.prototype, 'duration_s', [_mobx.observable], {
+}), _descriptor25 = _applyDecoratedDescriptor(_class.prototype, 'duration_s', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 15;
     }
-}), _descriptor25 = _applyDecoratedDescriptor(_class.prototype, 'duration_m', [_mobx.observable], {
+}), _descriptor26 = _applyDecoratedDescriptor(_class.prototype, 'duration_m', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 3;
     }
-}), _descriptor26 = _applyDecoratedDescriptor(_class.prototype, 'duration_h', [_mobx.observable], {
+}), _descriptor27 = _applyDecoratedDescriptor(_class.prototype, 'duration_h', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 1;
     }
-}), _descriptor27 = _applyDecoratedDescriptor(_class.prototype, 'duration_d', [_mobx.observable], {
+}), _descriptor28 = _applyDecoratedDescriptor(_class.prototype, 'duration_d', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return 1;
     }
-}), _descriptor28 = _applyDecoratedDescriptor(_class.prototype, 'is_fully_blurred', [_mobx.observable], {
+}), _descriptor29 = _applyDecoratedDescriptor(_class.prototype, 'is_fully_blurred', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor29 = _applyDecoratedDescriptor(_class.prototype, 'is_app_blurred', [_mobx.observable], {
+}), _descriptor30 = _applyDecoratedDescriptor(_class.prototype, 'is_app_blurred', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor30 = _applyDecoratedDescriptor(_class.prototype, 'is_route_blurred', [_mobx.observable], {
+}), _descriptor31 = _applyDecoratedDescriptor(_class.prototype, 'is_route_blurred', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return false;
     }
-}), _descriptor31 = _applyDecoratedDescriptor(_class.prototype, 'show_positions_toggle', [_mobx.observable], {
+}), _descriptor32 = _applyDecoratedDescriptor(_class.prototype, 'show_positions_toggle', [_mobx.observable], {
     enumerable: true,
     initializer: function initializer() {
         return true;
     }
-}), _applyDecoratedDescriptor(_class.prototype, 'onChangeUiStore', [_dec], Object.getOwnPropertyDescriptor(_class.prototype, 'onChangeUiStore'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'handleResize', [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, 'handleResize'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_mobile', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_mobile'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_tablet', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_tablet'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showRouteBlur', [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, 'showRouteBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideRouteBlur', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'hideRouteBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showAppBlur', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'showAppBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideAppBlur', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'hideAppBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showFullBlur', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'showFullBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideFullBlur', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'hideFullBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleAccountsDialog', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleAccountsDialog'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setAppLoading', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'setAppLoading'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleChartLayout', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleChartLayout'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleChartCountdown', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleChartCountdown'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleDarkMode', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleDarkMode'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showPositionsFooterToggle', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'showPositionsFooterToggle'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hidePositionsFooterToggle', [_dec15], Object.getOwnPropertyDescriptor(_class.prototype, 'hidePositionsFooterToggle'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleSettingsDialog', [_dec16], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleSettingsDialog'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showLanguageDialog', [_dec17], Object.getOwnPropertyDescriptor(_class.prototype, 'showLanguageDialog'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideLanguageDialog', [_dec18], Object.getOwnPropertyDescriptor(_class.prototype, 'hideLanguageDialog'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'openPositionsDrawer', [_dec19], Object.getOwnPropertyDescriptor(_class.prototype, 'openPositionsDrawer'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'togglePositionsDrawer', [_dec20], Object.getOwnPropertyDescriptor(_class.prototype, 'togglePositionsDrawer'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleServicesErrorModal', [_dec21], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleServicesErrorModal'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showMainDrawer', [_dec22], Object.getOwnPropertyDescriptor(_class.prototype, 'showMainDrawer'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showNotificationsDrawer', [_dec23], Object.getOwnPropertyDescriptor(_class.prototype, 'showNotificationsDrawer'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideDrawers', [_dec24], Object.getOwnPropertyDescriptor(_class.prototype, 'hideDrawers'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removePWAPromptEvent', [_dec25], Object.getOwnPropertyDescriptor(_class.prototype, 'removePWAPromptEvent'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setPWAPromptEvent', [_dec26], Object.getOwnPropertyDescriptor(_class.prototype, 'setPWAPromptEvent'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'addNotification', [_dec27], Object.getOwnPropertyDescriptor(_class.prototype, 'addNotification'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeNotification', [_dec28], Object.getOwnPropertyDescriptor(_class.prototype, 'removeNotification'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeAllNotifications', [_dec29], Object.getOwnPropertyDescriptor(_class.prototype, 'removeAllNotifications'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setHasOnlyForwardingContracts', [_dec30], Object.getOwnPropertyDescriptor(_class.prototype, 'setHasOnlyForwardingContracts'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setSlowLoading', [_dec31], Object.getOwnPropertyDescriptor(_class.prototype, 'setSlowLoading'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'addNotificationBar', [_dec32], Object.getOwnPropertyDescriptor(_class.prototype, 'addNotificationBar'), _class.prototype)), _class));
+}), _applyDecoratedDescriptor(_class.prototype, 'onChangeUiStore', [_dec], Object.getOwnPropertyDescriptor(_class.prototype, 'onChangeUiStore'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'handleResize', [_dec2], Object.getOwnPropertyDescriptor(_class.prototype, 'handleResize'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_mobile', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_mobile'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'is_tablet', [_mobx.computed], Object.getOwnPropertyDescriptor(_class.prototype, 'is_tablet'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showRouteBlur', [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, 'showRouteBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideRouteBlur', [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, 'hideRouteBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showAppBlur', [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, 'showAppBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideAppBlur', [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, 'hideAppBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showFullBlur', [_dec7], Object.getOwnPropertyDescriptor(_class.prototype, 'showFullBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideFullBlur', [_dec8], Object.getOwnPropertyDescriptor(_class.prototype, 'hideFullBlur'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleAccountsDialog', [_dec9], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleAccountsDialog'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setAppLoading', [_dec10], Object.getOwnPropertyDescriptor(_class.prototype, 'setAppLoading'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleChartLayout', [_dec11], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleChartLayout'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleChartCountdown', [_dec12], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleChartCountdown'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleDarkMode', [_dec13], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleDarkMode'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showPositionsFooterToggle', [_dec14], Object.getOwnPropertyDescriptor(_class.prototype, 'showPositionsFooterToggle'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hidePositionsFooterToggle', [_dec15], Object.getOwnPropertyDescriptor(_class.prototype, 'hidePositionsFooterToggle'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleSettingsDialog', [_dec16], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleSettingsDialog'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showLanguageDialog', [_dec17], Object.getOwnPropertyDescriptor(_class.prototype, 'showLanguageDialog'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideLanguageDialog', [_dec18], Object.getOwnPropertyDescriptor(_class.prototype, 'hideLanguageDialog'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'openPositionsDrawer', [_dec19], Object.getOwnPropertyDescriptor(_class.prototype, 'openPositionsDrawer'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'togglePositionsDrawer', [_dec20], Object.getOwnPropertyDescriptor(_class.prototype, 'togglePositionsDrawer'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleServicesErrorModal', [_dec21], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleServicesErrorModal'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showMainDrawer', [_dec22], Object.getOwnPropertyDescriptor(_class.prototype, 'showMainDrawer'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'showNotificationsDrawer', [_dec23], Object.getOwnPropertyDescriptor(_class.prototype, 'showNotificationsDrawer'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'hideDrawers', [_dec24], Object.getOwnPropertyDescriptor(_class.prototype, 'hideDrawers'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removePWAPromptEvent', [_dec25], Object.getOwnPropertyDescriptor(_class.prototype, 'removePWAPromptEvent'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setPWAPromptEvent', [_dec26], Object.getOwnPropertyDescriptor(_class.prototype, 'setPWAPromptEvent'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'addNotification', [_dec27], Object.getOwnPropertyDescriptor(_class.prototype, 'addNotification'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeNotification', [_dec28], Object.getOwnPropertyDescriptor(_class.prototype, 'removeNotification'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'removeAllNotifications', [_dec29], Object.getOwnPropertyDescriptor(_class.prototype, 'removeAllNotifications'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setHasOnlyForwardingContracts', [_dec30], Object.getOwnPropertyDescriptor(_class.prototype, 'setHasOnlyForwardingContracts'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'setSlowLoading', [_dec31], Object.getOwnPropertyDescriptor(_class.prototype, 'setSlowLoading'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'addNotificationBar', [_dec32], Object.getOwnPropertyDescriptor(_class.prototype, 'addNotificationBar'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'toggleUnsupportedContractModal', [_dec33], Object.getOwnPropertyDescriptor(_class.prototype, 'toggleUnsupportedContractModal'), _class.prototype)), _class));
 exports.default = UIStore;
 
 /***/ }),
