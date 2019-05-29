@@ -6233,7 +6233,9 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                 _react2.default.createElement(_resultOverlay2.default, {
                     contract_id: id,
                     onClickRemove: onClickRemove,
-                    onClick: openContract,
+                    onClick: is_unsupported ? function () {
+                        return toggleUnsupportedContractModal(true);
+                    } : openContract,
                     result: result,
                     is_shade_visible: this.state.is_shade_on
                 }),
@@ -29415,12 +29417,13 @@ var isValidToSell = exports.isValidToSell = function isValidToSell(contract_info
 var getEndTime = exports.getEndTime = function getEndTime(contract_info) {
     var exit_tick_time = contract_info.exit_tick_time,
         date_expiry = contract_info.date_expiry,
+        is_expired = contract_info.is_expired,
+        is_path_dependent = contract_info.is_path_dependent,
         sell_time = contract_info.sell_time,
-        is_tick_contract = contract_info.tick_count,
-        is_sold = contract_info.is_sold;
+        is_tick_contract = contract_info.tick_count;
 
 
-    if (!is_sold) return undefined;
+    if (!is_expired && !isUserSold(contract_info)) return undefined;
 
     if (isUserSold(contract_info)) {
         return sell_time > date_expiry ? date_expiry : sell_time;
@@ -29428,7 +29431,7 @@ var getEndTime = exports.getEndTime = function getEndTime(contract_info) {
         return date_expiry;
     }
 
-    return exit_tick_time;
+    return date_expiry > exit_tick_time && !+is_path_dependent ? date_expiry : exit_tick_time;
 };
 
 /***/ }),
