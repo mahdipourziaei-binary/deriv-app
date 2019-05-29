@@ -6351,7 +6351,11 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                                 { className: 'positions-drawer-card__payout-label' },
                                 (0, _localize.localize)('Potential payout')
                             ),
-                            _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency })
+                            contract_info.payout ? _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency }) : _react2.default.createElement(
+                                'strong',
+                                null,
+                                '-'
+                            )
                         )
                     )
                 ) : _react2.default.createElement(
@@ -6464,7 +6468,11 @@ var PositionsDrawerCard = function (_React$PureComponent) {
                                 { className: 'positions-drawer-card__payout-label' },
                                 (0, _localize.localize)('Potential payout')
                             ),
-                            _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency })
+                            contract_info.payout ? _react2.default.createElement(_money2.default, { amount: contract_info.payout, currency: currency }) : _react2.default.createElement(
+                                'strong',
+                                null,
+                                '-'
+                            )
                         )
                     )
                 ),
