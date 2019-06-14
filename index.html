@@ -130,7 +130,7 @@
                     utm_source                = has_external_referrer && !has_utm_source ? ((search ? '&' : '?') + 'utm_source=' + new URL(document.referrer).hostname) : '';
                 }
 
-                window.location.href = '/trade' + search + utm_source + ((search || utm_source ? '&' : '?') + 'lang=' + (lang || 'en').toLowerCase();
+                window.location.href = '/trade' + search + utm_source + (search || utm_source ? '&' : '?') + 'lang=' + (lang || 'en').toLowerCase();
             }
 
             if (document.referrer) {
