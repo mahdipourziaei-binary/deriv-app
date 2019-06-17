@@ -14,32 +14,6 @@
         <meta charset="utf-8" />
         <meta name="google-site-verification" content="g5u3TyEdmYJ_HKZ6EmpW1nlKwD4XPVeLMhN9leeMfuw" />
         <script type="text/javascript">
-            if (location.protocol !== 'https:') {
-                location.href = location.href.replace("http://", "https://");
-            } else {
-                (function(l) {
-                    if (l.search) {
-                        var query = {};
-
-                        // Gets query strings of the url
-                        l.search.slice(1).split('&').forEach(function(v) {
-                            var a = v.split('=');
-
-                            query[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-                        });
-
-                        // Converts paths in query string to HTML5 route and refresh the url
-                        if (query.p !== undefined) {
-                            window.history.replaceState(null, null,
-                                l.pathname.slice(0) + (query.p.split('::').join('/') || '') +
-                                (query.q ? ('?' + query.q) : '') + l.hash
-                            );
-                        }
-                    }
-                }(window.location));
-            }
-        </script>
-        <script type="text/javascript">
             var lang;
             function getCookieItem(sKey) {
                 'use strict';
@@ -156,7 +130,7 @@
                     utm_source                = has_external_referrer && !has_utm_source ? ((search ? '&' : '?') + 'utm_source=' + new URL(document.referrer).hostname) : '';
                 }
 
-                window.location.href = '/trade' + search + utm_source + (search || utm_source ? '&' : '?') + 'lang=' + (lang || 'en').toLowerCase();
+                window.location.href = (lang || 'en').toLowerCase() + '/trade' + search + utm_source;
             }
 
             if (document.referrer) {

@@ -60,7 +60,8 @@
             base
             + br_branch_name                                                // /br_branch_name
             + '/'                                                           // https://deriv.app/
-            + `?from_404=true&4${(lang || 'en').toLowerCase()}&p=`            // ?p=
+            // + default_lang.toLowerCase()                                 TODO: add language to querystring instead
+            + '?from_404=true&p='                                           // en?p= 
             + routes.substr(1).replace('/', '::')                           // statement
             + (
                 location.search ? '&q=' + location.search.slice(1).replace(/&/g, '~and~') : ''
