@@ -88,7 +88,7 @@ var Statement = function (_React$Component) {
             var action = void 0;
 
             if (row_obj.id && ['buy', 'sell'].includes(row_obj.action_type)) {
-                action = (0, _Constants.getUnsupportedContracts)()[(0, _marketUnderyling.getMarketInformation)(row_obj).category.toUpperCase()] ? {
+                action = (0, _Constants.getSupportedContracts)()[(0, _marketUnderyling.getMarketInformation)(row_obj).category.toUpperCase()] ? (0, _helpers.getContractPath)(row_obj.id) : {
                     component: _react2.default.createElement(_localize2.default, {
                         i18n_default_text: 'This trade type is currently not supported on {{website_name}}. Please go to <0>Binary.com</0> for details.',
                         values: {
@@ -96,7 +96,7 @@ var Statement = function (_React$Component) {
                         },
                         components: [_react2.default.createElement('a', { key: 0, className: 'link link--orange', rel: 'noopener noreferrer', target: '_blank', href: (0, _url.urlFor)('user/statementws', undefined, undefined, true) })]
                     })
-                } : (0, _helpers.getContractPath)(row_obj.id);
+                };
             } else if (['deposit', 'withdrawal'].includes(row_obj.action_type)) {
                 action = {
                     message: row_obj.desc
@@ -180,7 +180,7 @@ var Statement = function (_React$Component) {
 }(_react2.default.Component);
 
 Statement.propTypes = {
-    component_icon: _propTypes2.default.func,
+    component_icon: _propTypes2.default.string,
     data: _mobxReact.PropTypes.arrayOrObservableArray,
     error: _propTypes2.default.string,
     handleScroll: _propTypes2.default.func,

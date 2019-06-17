@@ -186,8 +186,6 @@ var _verticalTab = __webpack_require__(/*! ../../../App/Components/Elements/Vert
 
 var _verticalTab2 = _interopRequireDefault(_verticalTab);
 
-var _Settings = __webpack_require__(/*! ../../../Assets/Settings */ "./src/javascript/app/Assets/Settings/index.js");
-
 var _routes = __webpack_require__(/*! ../../../Constants/routes */ "./src/javascript/app/Constants/routes.js");
 
 var _routes2 = _interopRequireDefault(_routes);
@@ -269,7 +267,7 @@ var Reports = function (_React$Component) {
                     _this2.props.history.push(_routes2.default.trade);
                     _this2.props.toggleReports(false);
                 },
-                icon: _Settings.IconClose,
+                icon: 'SettingsIconClose',
                 title: (0, _i18n.localize)('Close')
             }];
             return _react2.default.createElement(

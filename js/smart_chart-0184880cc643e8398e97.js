@@ -130,10 +130,10 @@ var ControlWidgets = function ControlWidgets(_ref) {
         null,
         _react2.default.createElement(_smartchartsBeta.CrosshairToggle, null),
         _react2.default.createElement(_smartchartsBeta.ChartTypes, { onChange: updateChartType }),
-        _react2.default.createElement(_smartchartsBeta.StudyLegend, null),
-        _react2.default.createElement(_smartchartsBeta.Comparison, null),
+        _react2.default.createElement(_smartchartsBeta.StudyLegend, { searchInputClassName: 'data-hj-whitelist' }),
+        _react2.default.createElement(_smartchartsBeta.Comparison, { searchInputClassName: 'data-hj-whitelist' }),
         _react2.default.createElement(_smartchartsBeta.DrawTools, null),
-        _react2.default.createElement(_smartchartsBeta.Views, null),
+        _react2.default.createElement(_smartchartsBeta.Views, { searchInputClassName: 'data-hj-whitelist' }),
         _react2.default.createElement(_smartchartsBeta.Share, null),
         _react2.default.createElement(_smartchartsBeta.Timeperiod, { onChange: updateGranularity }),
         _react2.default.createElement(_smartchartsBeta.ChartSize, null)
@@ -184,7 +184,7 @@ var TopWidgets = function TopWidgets(_ref) {
         _react2.default.Fragment,
         null,
         InfoBox,
-        _react2.default.createElement(_smartchartsBeta.ChartTitle, { enabled: is_title_enabled, onChange: onSymbolChange }),
+        _react2.default.createElement(_smartchartsBeta.ChartTitle, { enabled: is_title_enabled, onChange: onSymbolChange, searchInputClassName: 'data-hj-whitelist' }),
         _react2.default.createElement(_smartchartsBeta.AssetInformation, null)
     );
 };

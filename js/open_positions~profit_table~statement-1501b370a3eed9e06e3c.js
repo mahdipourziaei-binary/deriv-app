@@ -181,86 +181,6 @@ exports.default = (0, _connect.connect)(function (_ref2) {
 
 /***/ }),
 
-/***/ "./src/javascript/app/Assets/Common/icon-deposit.jsx":
-/*!***********************************************************!*\
-  !*** ./src/javascript/app/Assets/Common/icon-deposit.jsx ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.IconDeposit = undefined;
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var IconDeposit = function IconDeposit(_ref) {
-    var className = _ref.className;
-    return _react2.default.createElement(
-        'svg',
-        { className: className, width: '32', height: '32' },
-        _react2.default.createElement('path', {
-            d: 'M21.9615595 2.06086937l4.3389292.61984703c1.3668351.19526215 2.3165825 1.46159211 2.1213204 2.82842713a2.50000145 2.50000145 0 0 1-.0710639.33324943l-1.3699928 4.79497484c-.0758621.2655175-.352605.4192635-.6181225.3434014-.2655175-.0758622-.4192636-.3526051-.3434014-.6181226l1.3699928-4.79497477a1.50000687 1.50000687 0 0 0 .0426383-.19994966c.1171573-.82010101-.4526912-1.57989899-1.2727922-1.69705627L22 3.07651341V10.5c0 .2761424-.2238576.5-.5.5s-.5-.2238576-.5-.5V2.5091859a.49937872.49937872 0 0 1-.0000157-.01613236C20.9962426 1.66782199 20.3261104 1 19.5 1h-12C6.67157288 1 6 1.67157288 6 2.5v8c0 .2761424-.22385763.5-.5.5-.27614237 0-.5-.2238576-.5-.5v-8C5 1.11928813 6.11928813 0 7.5 0h12c1.2308916 0 2.2540152.88956026 2.4615595 2.06086937zM14 3.70710678V10.5c0 .2761424-.2238576.5-.5.5s-.5-.2238576-.5-.5V3.70710678l-2.1464466 2.14644661c-.1952622.19526215-.5118446.19526215-.7071068 0-.19526214-.19526215-.19526214-.51184463 0-.70710678l3-3c.1952622-.19526215.5118446-.19526215.7071068 0l3 3c.1952621.19526215.1952621.51184463 0 .70710678-.1952622.19526215-.5118446.19526215-.7071068 0L14 3.70710678zM30 12.5V18h.5c.8284271 0 1.5.6715729 1.5 1.5v5c0 .8284271-.6715729 1.5-1.5 1.5H30v3.5c0 1.3807119-1.1192881 2.5-2.5 2.5h-25C1.11928813 32 0 30.8807119 0 29.5V9c0-2.30676577 1.35906547-4 3.5-4 .27614237 0 .5.22385763.5.5 0 .27614237-.22385763.5-.5.5C1.96568485 6 1 7.20312867 1 9c0 1.6568542 1.34314575 3 3 3h25.5c.2761424 0 .5.2238576.5.5zm-1 .5H4c-1.19469253 0-2.26705555-.5237549-3-1.3541756V29.5c0 .8284271.67157288 1.5 1.5 1.5h25c.8284271 0 1.5-.6715729 1.5-1.5V26h-6c-2.209139 0-4-1.790861-4-4s1.790861-4 4-4h6v-5zm-6 12h7.5c.2761424 0 .5-.2238576.5-.5v-5c0-.2761424-.2238576-.5-.5-.5H23c-1.6568542 0-3 1.3431458-3 3s1.3431458 3 3 3zm0-4.5c.8284271 0 1.5.6715729 1.5 1.5s-.6715729 1.5-1.5 1.5-1.5-.6715729-1.5-1.5.6715729-1.5 1.5-1.5zm0 1c-.2761424 0-.5.2238576-.5.5s.2238576.5.5.5.5-.2238576.5-.5-.2238576-.5-.5-.5z',
-            fill: '#2A3052',
-            fillRule: 'evenodd',
-            fillOpacity: '.8',
-            className: 'color1-fill'
-        })
-    );
-};
-
-exports.IconDeposit = IconDeposit;
-
-/***/ }),
-
-/***/ "./src/javascript/app/Assets/Common/icon-withdrawal.jsx":
-/*!**************************************************************!*\
-  !*** ./src/javascript/app/Assets/Common/icon-withdrawal.jsx ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.IconWithdrawal = undefined;
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var IconWithdrawal = function IconWithdrawal(_ref) {
-    var className = _ref.className;
-    return _react2.default.createElement(
-        'svg',
-        { className: className, width: '32', height: '32' },
-        _react2.default.createElement('path', {
-            d: 'M0 23V2.5C0 1.11928813 1.11928813 0 2.5 0h25C28.8807119 0 30 1.11928813 30 2.5V6h.5c.8284271 0 1.5.67157288 1.5 1.5v5c0 .8284271-.6715729 1.5-1.5 1.5H30v5.5c0 .2761424-.2238576.5-.5.5H4c-1.65685425 0-3 1.3431458-3 3 0 1.7968713.96568485 3 2.5 3 .27614237 0 .5.2238576.5.5s-.22385763.5-.5.5C1.35906547 27 0 25.3067658 0 23zm1-2.6458244C1.73294445 19.5237549 2.80530747 19 4 19h25v-5h-6c-2.209139 0-4-1.790861-4-4s1.790861-4 4-4h6V2.5c0-.82842712-.6715729-1.5-1.5-1.5h-25C1.67157288 1 1 1.67157288 1 2.5v17.8541756zM23 7c-1.6568542 0-3 1.34314575-3 3 0 1.6568542 1.3431458 3 3 3h7.5c.2761424 0 .5-.2238576.5-.5v-5c0-.27614237-.2238576-.5-.5-.5H23zm0 4.5c-.8284271 0-1.5-.6715729-1.5-1.5 0-.82842712.6715729-1.5 1.5-1.5s1.5.67157288 1.5 1.5c0 .8284271-.6715729 1.5-1.5 1.5zm0-1c.2761424 0 .5-.2238576.5-.5 0-.27614237-.2238576-.5-.5-.5s-.5.22385763-.5.5c0 .2761424.2238576.5.5.5zm-2.0000155 19.0068996A.49938076.49938076 0 0 1 21 29.4907533V21.5c0-.2761424.2238576-.5.5-.5s.5.2238576.5.5v7.4234258l4.1590674-.5941525c.820101-.1171573 1.3899495-.8769553 1.2727922-1.6970563a1.50001114 1.50001114 0 0 0-.0426383-.1999497l-1.3699928-4.7949748c-.0758622-.2655175.0778839-.5422604.3434014-.6181225.2655175-.0758621.5422604.0778839.6181225.3434014l1.3699928 4.7949748a2.50000236 2.50000236 0 0 1 .0710639.3332494c.1952621 1.3668351-.7544853 2.633165-2.1213204 2.8284272l-4.3389181.6198454C21.7540516 31.1104081 20.7309134 32 19.5 32h-12C6.11928813 32 5 30.8807119 5 29.5v-8c0-.2761424.22385763-.5.5-.5.27614237 0 .5.2238576.5.5v8c0 .8284271.67157288 1.5 1.5 1.5h12c.826126 0 1.496268-.6678473 1.4999845-1.4931004zM14 28.2928932l2.1464466-2.1464466c.1952622-.1952621.5118446-.1952621.7071068 0 .1952621.1952622.1952621.5118446 0 .7071068l-3 3c-.1952622.1952621-.5118446.1952621-.7071068 0l-3-3c-.19526214-.1952622-.19526214-.5118446 0-.7071068.1952622-.1952621.5118446-.1952621.7071068 0L13 28.2928932V21.5c0-.2761424.2238576-.5.5-.5s.5.2238576.5.5v6.7928932z',
-            fill: '#2A3052',
-            fillRule: 'evenodd',
-            fillOpacity: '.8',
-            className: 'color1-fill'
-        })
-    );
-};
-
-exports.IconWithdrawal = IconWithdrawal;
-
-/***/ }),
-
 /***/ "./src/javascript/app/Modules/Reports/Components/empty-trade-history-message.jsx":
 /*!***************************************************************************************!*\
   !*** ./src/javascript/app/Modules/Reports/Components/empty-trade-history-message.jsx ***!
@@ -283,6 +203,10 @@ var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _icon = __webpack_require__(/*! ../../../Assets/icon.jsx */ "./src/javascript/app/Assets/icon.jsx");
+
+var _icon2 = _interopRequireDefault(_icon);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var EmptyTradeHistoryMessage = function EmptyTradeHistoryMessage(_ref) {
@@ -290,16 +214,13 @@ var EmptyTradeHistoryMessage = function EmptyTradeHistoryMessage(_ref) {
         component_icon = _ref.component_icon,
         localized_message = _ref.localized_message,
         localized_period_message = _ref.localized_period_message;
-
-    var ComponentIcon = component_icon;
-
     return _react2.default.createElement(
         _react2.default.Fragment,
         null,
         _react2.default.createElement(
             'div',
             { className: 'empty-trade-history' },
-            _react2.default.createElement(ComponentIcon, { className: 'empty-trade-history__icon' }),
+            _react2.default.createElement(_icon2.default, { icon: component_icon, className: 'empty-trade-history__icon' }),
             _react2.default.createElement(
                 'span',
                 { className: 'empty-trade-history__text' },
@@ -310,7 +231,7 @@ var EmptyTradeHistoryMessage = function EmptyTradeHistoryMessage(_ref) {
 };
 
 EmptyTradeHistoryMessage.propTypes = {
-    component_icon: _propTypes2.default.func,
+    component_icon: _propTypes2.default.string,
     has_selected_date: _propTypes2.default.bool,
     localized_message: _propTypes2.default.string,
     localized_period_message: _propTypes2.default.string
@@ -344,13 +265,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _underlyingIcon = __webpack_require__(/*! ../../../App/Components/Elements/underlying-icon.jsx */ "./src/javascript/app/App/Components/Elements/underlying-icon.jsx");
 
-var _Common = __webpack_require__(/*! ../../../Assets/Common */ "./src/javascript/app/Assets/Common/index.js");
+var _icon = __webpack_require__(/*! ../../../Assets/icon.jsx */ "./src/javascript/app/Assets/icon.jsx");
 
-var _iconDeposit = __webpack_require__(/*! ../../../Assets/Common/icon-deposit.jsx */ "./src/javascript/app/Assets/Common/icon-deposit.jsx");
-
-var _iconWithdrawal = __webpack_require__(/*! ../../../Assets/Common/icon-withdrawal.jsx */ "./src/javascript/app/Assets/Common/icon-withdrawal.jsx");
-
-var _Types = __webpack_require__(/*! ../../../Assets/Trading/Types */ "./src/javascript/app/Assets/Trading/Types/index.js");
+var _icon2 = _interopRequireDefault(_icon);
 
 var _marketUnderyling = __webpack_require__(/*! ../Helpers/market-underyling */ "./src/javascript/app/Modules/Reports/Helpers/market-underyling.js");
 
@@ -376,7 +293,7 @@ var MarketSymbolIconRow = function MarketSymbolIconRow(_ref) {
             _react2.default.createElement(
                 'div',
                 { className: 'market-symbol-icon-category' },
-                _react2.default.createElement(_Types.IconTradeType, { type: market_information.category }),
+                _react2.default.createElement(_icon2.default, { icon: 'IconTradeType', type: market_information.category }),
                 show_description && market_information.category
             )
         );
@@ -384,7 +301,7 @@ var MarketSymbolIconRow = function MarketSymbolIconRow(_ref) {
         return _react2.default.createElement(
             'div',
             { className: 'market-symbol-icon' },
-            payload.action_type === 'deposit' ? _react2.default.createElement(_Common.Icon, { icon: _iconDeposit.IconDeposit }) : _react2.default.createElement(_Common.Icon, { icon: _iconWithdrawal.IconWithdrawal })
+            payload.action_type === 'deposit' ? _react2.default.createElement(_icon2.default, { icon: 'IconDeposit' }) : _react2.default.createElement(_icon2.default, { icon: 'IconWithdrawal' })
         );
     }
 
@@ -448,7 +365,7 @@ var PlaceholderComponent = function PlaceholderComponent(props) {
 };
 
 PlaceholderComponent.propTypes = {
-    component_icon: _propTypes2.default.func,
+    component_icon: _propTypes2.default.string,
     empty_message_component: _propTypes2.default.func,
     has_selected_date: _propTypes2.default.bool,
     localized_message: _propTypes2.default.string
@@ -808,15 +725,19 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 var getMarketInformation = exports.getMarketInformation = function getMarketInformation(payload) {
+    var market_info = {
+        category: '',
+        underlying: ''
+    };
+
     var pattern = new RegExp('^([A-Z]+)_((OTC_[A-Z0-9]+)|R_[\\d]{2,3}|[A-Z]+)_'); // Used to get market name from shortcode
     var extracted = pattern.exec(payload.shortcode);
     if (extracted !== null) {
-        return {
-            category: extracted[1].toLowerCase(),
-            underlying: extracted[2]
-        };
+        market_info.category = extracted[1].toLowerCase();
+        market_info.underlying = extracted[2];
     }
-    return null;
+
+    return market_info;
 };
 
 /***/ }),

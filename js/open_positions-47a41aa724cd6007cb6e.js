@@ -159,7 +159,7 @@ var OpenPositions = function (_React$Component) {
 
 OpenPositions.propTypes = {
     active_positions: _mobxReact.PropTypes.arrayOrObservableArray,
-    component_icon: _propTypes2.default.func,
+    component_icon: _propTypes2.default.string,
     currency: _propTypes2.default.string,
     error: _propTypes2.default.string,
     history: _propTypes2.default.object,

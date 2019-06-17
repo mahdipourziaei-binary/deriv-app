@@ -81,9 +81,9 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _contract = __webpack_require__(/*! ../../../Constants/contract */ "./src/javascript/app/Constants/contract.js");
 
-var _icon = __webpack_require__(/*! ../../../Assets/Common/icon.jsx */ "./src/javascript/app/Assets/Common/icon.jsx");
+var _icon = __webpack_require__(/*! ../../../Assets/icon.jsx */ "./src/javascript/app/Assets/icon.jsx");
 
-var _Types = __webpack_require__(/*! ../../../Assets/Trading/Types */ "./src/javascript/app/Assets/Trading/Types/index.js");
+var _icon2 = _interopRequireDefault(_icon);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -95,7 +95,7 @@ var ContractTypeCell = function ContractTypeCell(_ref) {
         _react2.default.createElement(
             'div',
             { className: 'type-wrapper' },
-            _react2.default.createElement(_icon.Icon, { icon: _Types.IconTradeType, type: type.toLowerCase(), className: 'type' })
+            _react2.default.createElement(_icon2.default, { icon: 'IconTradeType', type: type.toLowerCase(), className: 'type' })
         ),
         _react2.default.createElement(
             'span',
