@@ -14558,9 +14558,9 @@ var i18n_config = {
             return (0, _crc.str)(defaultValue);
         }
     },
-    lng: window.location.search ? window.location.search.substr(1).split('&').find(function (query) {
+    lng: window.location.search ? window.location.search.includes('lang=') ? window.location.search.substr(1).split('&').find(function (query) {
         return query.includes('lang=');
-    }).split('=')[1].toUpperCase() : undefined,
+    }).split('=')[1].toUpperCase() : undefined : undefined,
     fallbackLng: 'EN'
 };
 
