@@ -1,0 +1,27 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+export default (function (_ref) {
+  var _ref$styles = _ref.styles,
+      styles = _ref$styles === void 0 ? {} : _ref$styles,
+      props = _objectWithoutProperties(_ref, ["styles"]);
+
+  return React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "32",
+    height: "32"
+  }, props), React.createElement("g", {
+    fill: "none",
+    fillRule: "evenodd"
+  }, React.createElement("path", {
+    d: "M0 0h32v32H0z"
+  }), React.createElement("path", {
+    fill: "#333",
+    fillRule: "nonzero",
+    d: "M16 18a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-6 5.708A8.967 8.967 0 0 0 16 25a8.967 8.967 0 0 0 6-2.292l-.854-.854a.5.5 0 0 1 .708-.708l.854.855a8.964 8.964 0 0 0 2.278-5.501H24a.5.5 0 1 1 0-1h.986a8.964 8.964 0 0 0-2.278-5.5l-.854.854a.5.5 0 0 1-.708-.708l.855-.854A8.964 8.964 0 0 0 16.5 7.014V8a.5.5 0 1 1-1 0v-.986A8.964 8.964 0 0 0 10 9.292l.854.854a.5.5 0 0 1-.708.708l-.854-.855A8.964 8.964 0 0 0 7.014 15.5H8a.5.5 0 1 1 0 1h-.986A8.964 8.964 0 0 0 9.292 22l.854-.854a.5.5 0 0 1 .708.708l-.855.854zM16 26c-5.523 0-10-4.477-10-10S10.477 6 16 6s10 4.477 10 10-4.477 10-10 10zm-3.854-13.146a.5.5 0 0 1 .708-.708l2.12 2.122a.5.5 0 1 1-.706.707l-2.122-2.121z"
+  })));
+});

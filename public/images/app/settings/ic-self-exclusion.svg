@@ -1,0 +1,40 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+export default (function (_ref) {
+  var _ref$styles = _ref.styles,
+      styles = _ref$styles === void 0 ? {} : _ref$styles,
+      props = _objectWithoutProperties(_ref, ["styles"]);
+
+  return React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "32",
+    height: "32"
+  }, props), React.createElement("g", {
+    fill: "none",
+    fillRule: "evenodd"
+  }, React.createElement("path", {
+    d: "M0 0h32v32H0z"
+  }), React.createElement("path", {
+    stroke: "#333",
+    d: "M10.268 23.5h.232v-4.333L8.449 16.43a.727.727 0 0 0-1.095-.077 1.462 1.462 0 0 0-.274 1.687l1.34 2.68a.5.5 0 0 0 .03.053l1.818 2.726z"
+  }), React.createElement("path", {
+    fill: "#333",
+    fillRule: "nonzero",
+    d: "M11 16v8a1 1 0 0 0 1 1h9v-9H11zm0-1h10a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-9a2 2 0 0 1-2-2v-8a1 1 0 0 1 1-1zm9 0h2v-4a1 1 0 0 0-2 0v4zm1-6a2 2 0 0 1 2 2v5h-4v-5a2 2 0 0 1 2-2zm-4 6h2v-5a1 1 0 0 0-2 0v5zm1-7a2 2 0 0 1 2 2v6h-4v-6a2 2 0 0 1 2-2zm-4 7h2V8a1 1 0 0 0-2 0v7zm1-9a2 2 0 0 1 2 2v8h-4V8a2 2 0 0 1 2-2zm-4 9h2V9a1 1 0 0 0-2 0v6zm1-8a2 2 0 0 1 2 2v7h-4V9a2 2 0 0 1 2-2z"
+  }), React.createElement("path", {
+    fill: "#FFF",
+    d: "M22 16v10h-5V16h-6v-1h11v1z"
+  }), React.createElement("path", {
+    fill: "#333",
+    d: "M13 7.5h1v8a.5.5 0 1 1-1 0v-8zm3 1h1v7a.5.5 0 1 1-1 0v-7zm3 1h1v6a.5.5 0 1 1-1 0v-6z"
+  }), React.createElement("path", {
+    fill: "#333",
+    fillRule: "nonzero",
+    d: "M21.5 20.793l.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 0 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 .708-.708l.646.647zm0 4.207a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm0 1a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"
+  })));
+});

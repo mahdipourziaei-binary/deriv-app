@@ -1,0 +1,51 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+export default (function (_ref) {
+  var _ref$styles = _ref.styles,
+      styles = _ref$styles === void 0 ? {} : _ref$styles,
+      props = _objectWithoutProperties(_ref, ["styles"]);
+
+  return React.createElement("svg", _extends({
+    width: "160",
+    height: "120",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), React.createElement("defs", null, React.createElement("linearGradient", {
+    x1: "50%",
+    y1: "147.774%",
+    x2: "50%",
+    y2: "10.759%",
+    id: "a"
+  }, React.createElement("stop", {
+    stopColor: "#101320",
+    stopOpacity: "0",
+    offset: "0%"
+  }), React.createElement("stop", {
+    stopColor: "#FFF",
+    stopOpacity: ".16",
+    offset: "100%"
+  }))), React.createElement("g", {
+    fill: "none",
+    fillRule: "evenodd"
+  }, React.createElement("path", {
+    fill: "#101320",
+    fillRule: "nonzero",
+    d: "M0 0h160v120H0z"
+  }), React.createElement("path", {
+    fillOpacity: ".8",
+    fill: "url(#a)",
+    d: "M95.998 34.453l-9.498-.065-5 26.268-2-19.701-25-6.567L52.5 16l-23 18.388-4 19.701L22.5 16l-9 57.79H0v45.313L96 120z"
+  }), React.createElement("path", {
+    d: "M96 34.077c-.026.335-.24.59-.498.59h-8.576l-4.93 25.674c-.095.743-.914.725-.99-.02l-1.981-19.487-24.914-6.413a.771.771 0 0 1-.104-.317l-1.893-17.37-22.182 17.7-3.948 19.413c-.143.703-.923.623-.98-.102L22.337 19.97 13.99 73.476c-.047.305-.252.524-.49.524H0v-1.311h13.092l8.919-57.164c.114-.735.928-.682.987.064l2.72 34.475 3.3-16.221a.667.667 0 0 1 .223-.391l23-18.356c.307-.244.705.002.756.467l1.98 18.179 24.915 6.416a.773.773 0 0 1 .106.322l1.559 15.334 4.452-21.91c.04-.316.249-.548.493-.548 5.256-.034 8.105-.034 8.548 0 .443.034.76.274.95.72z",
+    fill: "#FFF",
+    fillRule: "nonzero"
+  }), React.createElement("path", {
+    d: "M115.28 33.667L121.716 26H160v16h-38.284l-6.436-7.667H113v-.666h2.28zm-16.419 0h.806v.666h-.668L99 34.4a2 2 0 1 1-.139-.733zm3.472.666v-.666H105v.666h-2.667zm5.334 0v-.666h2.666v.666h-2.666z",
+    fill: "#F93",
+    fillRule: "nonzero"
+  })));
+});
