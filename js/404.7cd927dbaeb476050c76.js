@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["404"],{752:function(e,r,t){"use strict";t.r(r);var a=t(0),n=t.n(a),o=t(23),c=t(3),s=t(125),d=function(){return n.a.createElement(s.a,{header:Object(c.a)("Oops, page not available."),error_code:404,messages:[Object(c.a)("The page you requested could not be found. Either it no longer exists or the address is wrong. Please check for any typos.")],redirect_url:o.c.trade,redirect_label:Object(c.a)("Return to Trade")})};t.d(r,"default",function(){return d})}}]);
+//# sourceMappingURL=404.7cd927dbaeb476050c76.js.map
