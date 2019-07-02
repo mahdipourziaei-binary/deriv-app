@@ -136,8 +136,6 @@
   "public/images/favicons/favicon-32x32.png": "/public/images/favicons/favicon-32x32.png",
   "public/images/favicons/favicon-96x96.png": "/public/images/favicons/favicon-96x96.png",
   "public/images/favicons/favicon.ico": "/public/images/favicons/favicon.ico",
-  "pushwoosh-service-worker.js": "/pushwoosh-service-worker.js",
-  "pushwoosh-web-notifications.js": "/pushwoosh-web-notifications.js",
   "robots.txt": "/robots.txt",
   "sitemap.xml": "/sitemap.xml"
 }
