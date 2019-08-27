@@ -6917,7 +6917,7 @@ html {
       font-size: 1.6rem; }
   .account-wallet .current-loginid, .account-wallet .symbols {
     margin-left: 4px; }
-  .account-wallet .label {
+  .account-wallet__label {
     margin-left: 16px; }
   .account-wallet .inline-icon {
     width: 24px;
