@@ -370,13 +370,8 @@
   width: var(--tab-width); }
 
 .dc-tabs__item:not(.dc-tabs__active) {
+  border-bottom: 1px solid var(--general-section-1);
   cursor: pointer; }
-
-.theme--light .dc-tabs__item:not(.dc-tabs__active) {
-  border-bottom: 1px solid #f4f4f6; }
-
-.theme--dark .dc-tabs__item:not(.dc-tabs__active) {
-  border-bottom: 1px solid #101320; }
 
 .dc-tabs__active {
   font-weight: 700; }
@@ -384,11 +379,12 @@
 .dc-tabs__active-line {
   display: block;
   position: absolute;
-  top: 41px;
+  top: 39px;
   left: 0;
   width: var(--tab-width);
   height: 2px;
   background: #ff444f;
+  background: var(--brand-red-coral);
   transition: all ease-in-out 0.3s; }
 
 /*------------------------------------*
@@ -617,6 +613,179 @@
             @extend %inline-icon.active;
         }
 */
+/* postcss-bem-linter: ignore */
+html {
+  font-size: 62.5%;
+  /** TODO: define breakpoints */ }
+
+/** @define body */
+.body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+/* postcss-bem-linter: ignore */
+*, html, .body {
+  font-family: roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box; }
+
+/** @define select */
+.select {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  padding: 2px 3px;
+  border: 1px solid var(--border-normal);
+  border-radius: 4px; }
+
+/** @define input */
+.input {
+  font-family: inherit;
+  font-style: inherit;
+  padding: 2px 3px;
+  color: var(--text-prominent); }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: var(--text-prominent); }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--text-prominent); }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: var(--text-prominent); }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--text-prominent); }
+
+/** @define theme */
+.theme--light {
+  background: #ffffff; }
+
+.theme--dark {
+  background: #0e0e0e; }
+
+/** @define container */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+/** @define hidden */
+.hidden {
+  visibility: hidden !important;
+  transition: none !important; }
+
+/** @define absolute-center-v */
+.absolute-center-v {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0; }
+
+/** @define link */
+.link {
+  color: #ff444f;
+  color: var(--brand-red-coral);
+  font-weight: bold;
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: underline; }
+  .link--white {
+    color: #ffffff; }
+
+/** @define icon */
+.icon--centered {
+  top: 0.8em;
+  left: 5%; }
+
+/** @define center-text */
+.center-text {
+  text-align: center; }
+
+/** @define no-margin */
+.no-margin {
+  margin: 0; }
+
+/** @define hr */
+.hr {
+  border-top: var(--general-section-1);
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 0.5em 0;
+  padding: 0; }
+
+/** @define deriv-app */
+.deriv-app {
+  height: 100%;
+  overflow: hidden; }
+
+/** @define table */
+.table {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  text-transform: default;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--text-general); }
+  .table__cell {
+    padding: 0.75em;
+    display: flex;
+    align-items: center; }
+    .table__cell:first-child {
+      padding-left: 0; }
+    .table__cell:last-child {
+      padding-right: 0; }
+  .table__row {
+    display: grid;
+    grid-auto-rows: -webkit-max-content;
+    grid-auto-rows: max-content;
+    padding: 0 1.6em;
+    box-sizing: border-box;
+    text-decoration: none; }
+    .table__row, .table__row:active, .table__row:visited {
+      color: var(--text-general); }
+  .table__head {
+    border-bottom: 2px solid var(--general-section-1);
+    height: 52px; }
+  .table__head .table__row {
+    color: var(--text-prominent);
+    height: 100%;
+    border-bottom: none; }
+  .table__body {
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; }
+    .table__body .table__row-link:hover {
+      background-color: var(--general-hover);
+      cursor: pointer; }
+    .table__body .table__row:last-child {
+      border-bottom: none; }
+  .table__head, .table__foot {
+    font-weight: 500;
+    white-space: nowrap; }
+  .table__foot .table__row {
+    color: var(--text-general);
+    border-top: var(--general-section-1);
+    border-bottom: none; }
+
 /*
 *  [Work In Progress]
 *  This file is a WIP and will be broken down into different files for different components before the module is enabled
@@ -678,7 +847,6 @@
       margin: 0;
       background-color: transparent;
       font-weight: bold;
-      border: solid 2px #999999;
       height: 4em; }
       .theme--light .mt5-dashboard__welcome-message--button {
         color: #ffffff; }
@@ -746,13 +914,46 @@
       .theme--dark .mt5-dashboard__download-center--hint {
         color: #7f8397; }
 
+.mt5-attribute-describer {
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  text-transform: none;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: bold; }
+
+.mt5-compare-accounts {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+  .mt5-compare-accounts__data {
+    width: 845px; }
+    .mt5-compare-accounts__data__table {
+      flex: 1; }
+    .mt5-compare-accounts__data__row {
+      /*                     attribute   standard advanced synthetic */
+      grid-template-columns: 2.7fr       1fr      1fr      1fr; }
+    .mt5-compare-accounts__data .attribute, .mt5-compare-accounts__data .standard, .mt5-compare-accounts__data .advanced, .mt5-compare-accounts__data .synthetic {
+      justify-content: flex-start; }
+  .mt5-compare-accounts .mt5-compare-account--hint {
+    font-size: 12px;
+    line-height: 1.5em;
+    width: 100%;
+    padding: 1.6em 6.4em 2.4em 6.4em; }
+    .theme--light .mt5-compare-accounts .mt5-compare-account--hint {
+      color: rgba(0, 0, 0, 0.8); }
+    .theme--dark .mt5-compare-accounts .mt5-compare-account--hint {
+      color: #7f8397; }
+
 .mt5-real-accounts-display, .mt5-demo-accounts-display {
   margin-top: 2.4em;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .mt5-account-card {
-  height: 32em;
+  min-height: 32em;
   width: 30.4em;
   border-radius: 4px;
   display: flex;
@@ -761,7 +962,8 @@
   .mt5-account-card:not(:hover) {
     border: solid 1px #d6dadb; }
   .mt5-account-card:hover {
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16); }
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px var(--general-main-1); }
   .mt5-account-card--heading {
     font-size: 1.6em;
     color: rgba(0, 0, 0, 0.8);
@@ -786,19 +988,34 @@
       color: rgba(0, 0, 0, 0.8); }
     .theme--dark .mt5-account-card--paragraph {
       color: #7f8397; }
+  .mt5-account-card--balance {
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: left;
+    line-height: 1.5;
+    color: var(--text-profit-success); }
   .mt5-account-card__type {
     padding: 1.6em 1.6em 0;
-    display: flex;
-    align-items: center; }
-    .mt5-account-card__type--icon {
-      margin-right: 1.6em; }
+    display: flex; }
     .mt5-account-card__type--description {
       max-width: 19.2em;
-      display: inline-block; }
+      display: inline-block;
+      margin-left: 1.6em; }
       .mt5-account-card__type--description .mt5-account-card--heading {
         margin-bottom: 0.5em; }
+      .mt5-account-card__type--description .mt5-account-card--paragraph {
+        width: 13em; }
+  .mt5-account-card__clipboard {
+    cursor: pointer;
+    margin-left: 1em; }
+  .mt5-account-card__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .mt5-account-card__specs {
-    margin: 0 1.6em 1.6em; }
+    padding: 0 1.6em 1.6em; }
   .mt5-account-card__specs-table {
     width: 100%; }
     .mt5-account-card__specs-table-attribute {
@@ -824,20 +1041,108 @@
   .mt5-account-card__account-selection {
     height: 4rem;
     width: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     padding: 0;
     margin: 1.6rem;
-    background-color: #ff444f;
-    background-color: var(--brand-red-coral);
     font-size: 1.4em;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 700;
     text-transform: none;
     text-align: center;
     line-height: 1.5; }
-    .theme--light .mt5-account-card__account-selection {
-      color: #ffffff; }
-    .theme--dark .mt5-account-card__account-selection {
-      color: #ffffff; }
+    .mt5-account-card__account-selection--primary {
+      background-color: #ff444f;
+      background-color: var(--brand-red-coral); }
+      .theme--light .mt5-account-card__account-selection--primary {
+        color: #ffffff; }
+      .theme--dark .mt5-account-card__account-selection--primary {
+        color: #ffffff; }
+    .mt5-account-card__account-selection--secondary {
+      background-color: transparent;
+      border: 2px solid var(--button-secondary-default); }
+      .mt5-account-card__account-selection--secondary:hover {
+        background-color: var(--button-secondary-hover); }
+  .mt5-account-card__login {
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.5;
+    width: 272px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--general-section-1);
+    color: var(--text-general);
+    margin: 1.6em 0 0.8em; }
+    .mt5-account-card__login strong {
+      font-weight: bold; }
+  .mt5-account-card__manage {
+    display: flex;
+    justify-content: space-between; }
+    .mt5-account-card__manage .btn {
+      font-size: 1.2em;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 700;
+      text-transform: capitalize;
+      text-align: center;
+      line-height: 1.25;
+      margin: 0 1em;
+      width: 122px;
+      height: 32px; }
+
+.mt5-password-manager {
+  margin: 5.6rem auto 0;
+  width: 400px; }
+  .mt5-password-manager--paragraph, .mt5-password-manager--error-message {
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    text-transform: none;
+    text-align: left;
+    line-height: 1.5; }
+    .theme--light .mt5-password-manager--paragraph, .theme--light .mt5-password-manager--error-message {
+      color: rgba(0, 0, 0, 0.8); }
+    .theme--dark .mt5-password-manager--paragraph, .theme--dark .mt5-password-manager--error-message {
+      color: #7f8397; }
+  .mt5-password-manager--error-message {
+    color: var(--text-loss-danger) !important;
+    margin-bottom: 1em; }
+  .mt5-password-manager--hint {
+    font-size: 12px;
+    padding: 1.333em 0; }
+    .theme--light .mt5-password-manager--hint {
+      color: rgba(0, 0, 0, 0.8); }
+    .theme--dark .mt5-password-manager--hint {
+      color: #7f8397; }
+  .mt5-password-manager__main-form, .mt5-password-manager__investor-wrapper {
+    margin-top: 2.4rem; }
+  .mt5-password-manager__investor-wrapper .mt5-password-manager--paragraph:first-child {
+    margin-bottom: 0.6em; }
+  .mt5-password-manager__investor-form {
+    width: 300px;
+    margin: 2.4em auto 0; }
+  .mt5-password-manager__actions {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .mt5-password-manager__actions .mt5-password-manager--button:last-child {
+      margin-top: 0; }
+  .mt5-password-manager--button {
+    height: 4em; }
+
+.dc-modal__container_mt5-dashboard__compare-accounts {
+  width: 904px; }
+
+.dc-modal__container_mt5-password-manager__modal {
+  width: 904px;
+  height: 688px; }
 
 /* stylelint-enable */
 
