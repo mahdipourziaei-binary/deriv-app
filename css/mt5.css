@@ -921,8 +921,6 @@ html {
     .mt5-dashboard__welcome-message--content {
       display: flex;
       justify-content: space-between; }
-      .mt5-dashboard__welcome-message--content .mt5-dashboard__welcome-message--paragraph {
-        max-width: 59.7em; }
     .mt5-dashboard__welcome-message--heading {
       font-size: 1.6em;
       color: rgba(0, 0, 0, 0.8);
@@ -966,6 +964,27 @@ html {
         color: #ffffff; }
       .theme--dark .mt5-dashboard__welcome-message--button {
         color: #ffffff; }
+  .mt5-dashboard__missing-real {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.6rem;
+    background-color: var(--general-section-1);
+    margin-bottom: 3.2em; }
+    .mt5-dashboard__missing-real--heading {
+      font-size: 1.6em;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 700;
+      text-transform: none;
+      text-align: left;
+      line-height: 1.75;
+      line-height: 1.5em; }
+      .theme--light .mt5-dashboard__missing-real--heading {
+        color: rgba(0, 0, 0, 0.8); }
+      .theme--dark .mt5-dashboard__missing-real--heading {
+        color: #ffffff; }
+    .mt5-dashboard__missing-real--button {
+      height: 4em; }
   .mt5-dashboard__accounts-display {
     margin-bottom: 2.4em; }
   .mt5-dashboard__download-center {
