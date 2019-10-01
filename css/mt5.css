@@ -937,6 +937,10 @@ html {
       grid-template-columns: 2.7fr       1fr      1fr      1fr; }
     .mt5-compare-accounts__data .attribute, .mt5-compare-accounts__data .standard, .mt5-compare-accounts__data .advanced, .mt5-compare-accounts__data .synthetic {
       justify-content: flex-start; }
+  .mt5-compare-accounts-modal__wrapper {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: center; }
   .mt5-compare-accounts .mt5-compare-account--hint {
     font-size: 12px;
     line-height: 1.5em;
