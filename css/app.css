@@ -91,7 +91,7 @@
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -314,7 +314,7 @@
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -387,8 +387,8 @@
   border-radius: 4px;
   display: flex;
   flex-direction: row;
-  background: var(--status-default);
-  color: #0e0e0e; }
+  background: var(--general-active);
+  color: var(--text-prominent); }
 
 .dc-popover__bubble__icon {
   flex-grow: 1;
@@ -415,25 +415,25 @@
   left: 100%;
   top: 50%;
   margin-top: -5px;
-  border-left-color: var(--status-default); }
+  border-left-color: var(--general-active); }
 
 .dc-popover__bubble[data-popover-pos=right] .dc-popover__bubble__arrow {
   right: 100%;
   top: 50%;
   margin-top: -5px;
-  border-right-color: var(--status-default); }
+  border-right-color: var(--general-active); }
 
 .dc-popover__bubble[data-popover-pos=top] .dc-popover__bubble__arrow {
   left: 50%;
   top: 100%;
   margin-left: -5px;
-  border-top-color: var(--status-default); }
+  border-top-color: var(--general-active); }
 
 .dc-popover__bubble[data-popover-pos=bottom] .dc-popover__bubble__arrow {
   left: 50%;
   bottom: 100%;
   margin-left: -5px;
-  border-bottom-color: var(--status-default); }
+  border-bottom-color: var(--general-active); }
 
 .dc-popover__bubble--error {
   background-color: var(--status-danger); }
@@ -542,7 +542,7 @@
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -765,7 +765,7 @@
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -941,7 +941,7 @@
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -1163,7 +1163,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -1288,7 +1289,6 @@ html {
 
 /** @define dc-modal; */
 .dc-modal__container_modal-settings {
-  width: 736px;
   /* postcss-bem-linter: ignore */ }
   .dc-modal__container_modal-settings .dc-modal-header {
     border-bottom-width: 0; }
@@ -1385,7 +1385,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -1608,7 +1608,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -1733,7 +1733,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -1856,6 +1856,11 @@ html {
 .dc-input__field:disabled ~ svg .color1-fill {
   fill: var(--text-disabled); }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .dc-input__field:disabled {
+      color: var(--text-prominent); } } }
+
 .dc-input__field:focus {
   outline: none; }
 
@@ -1893,6 +1898,14 @@ html {
 .dc-input__field[type=textarea] ~ .dc-field-error {
   top: 10rem; }
 
+.dc-input__field:-webkit-autofill {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 0 30px var(--fill-normal) inset !important;
+  -webkit-text-fill-color: var(--text-prominent) !important; }
+
+.dc-input__field:-webkit-autofill:hover, .dc-input__field:-webkit-autofill:focus, .dc-input__field:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--fill-normal) inset !important; }
+
 .dc-input__leading-icon {
   margin-left: 1rem;
   top: 1rem;
@@ -1909,6 +1922,12 @@ html {
 .dc-input__trailing-icon {
   margin: 0 1.2rem 0 0 !important; }
 
+.dc-input__trailing-icon .color1-fill {
+  fill: var(--text-less-prominent); }
+
+.dc-input__trailing-icon .color1-stroke {
+  fill: var(--text-less-prominent); }
+
 .dc-input__label {
   color: var(--text-less-prominent);
   font-size: 1.4rem;
@@ -1917,7 +1936,7 @@ html {
   position: absolute;
   pointer-events: none;
   left: 1rem;
-  top: 1.3rem;
+  top: 0.9rem;
   transition: 0.25s ease all;
   transform-origin: top left; }
 
@@ -2039,7 +2058,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -2184,7 +2203,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -2210,7 +2229,8 @@ html {
   --transparent-success: transparentize(#00a79e, 0.92); }
 
 .dc-autocomplete {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .dc-autocomplete__trailing-icon {
   position: absolute;
@@ -2223,6 +2243,30 @@ html {
 
 .dc-autocomplete__trailing-icon--opened {
   transform: rotate(-180deg); }
+
+.dc-autocomplete__trailing-icon .color1-fill {
+  fill: var(--text-less-prominent); }
+
+.dc-autocomplete .dc-input--error .dc-autocomplete__trailing-icon .color1-fill {
+  fill: var(--text-loss-danger); }
+
+.dc-autocomplete .dc-dropdown-list {
+  box-shadow: 0 8px 16px 0 var(--shadow-menu);
+  background: var(--general-main-2); }
+
+.dc-autocomplete:focus, .dc-autocomplete[focus-within], .dc-autocomplete:active {
+  outline: 0; }
+
+.dc-autocomplete:focus, .dc-autocomplete:focus-within, .dc-autocomplete:active {
+  outline: 0; }
+
+.dc-autocomplete:focus .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill, .dc-autocomplete[focus-within] .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill, .dc-autocomplete:active .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill {
+  fill: #85acb0;
+  fill: var(--brand-secondary); }
+
+.dc-autocomplete:focus .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill, .dc-autocomplete:focus-within .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill, .dc-autocomplete:active .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill {
+  fill: #85acb0;
+  fill: var(--brand-secondary); }
 
 /*------------------------------------*
  *  # Constants
@@ -2316,7 +2360,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -2539,7 +2583,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -2691,7 +2735,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -2914,7 +2958,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -3109,7 +3153,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -3161,7 +3205,7 @@ html {
   text-transform: unset;
   text-align: center;
   line-height: 1.5;
-  color: var(--text-general);
+  color: var(--text-colored-background);
   display: inline-block;
   vertical-align: middle; }
 
@@ -3198,9 +3242,6 @@ html {
 .btn--primary--default .btn__text {
   color: var(--text-colored-background); }
 
-.btn--primary .btn__text {
-  color: #fff; }
-
 .btn--primary--orange {
   background: #f93; }
 
@@ -3213,20 +3254,17 @@ html {
 .btn--primary--orange.effect:focus:not(:active):after {
   border: 0 solid #f93; }
 
-.btn--primary--red {
-  background: var(--button-primary-default); }
-
 .btn--primary--green {
-  background: #39b19d; }
+  background: var(--status-success); }
 
 .btn--primary--green:hover:not([disabled]) {
-  background: #2d9f93; }
+  background: var(--transparent-success); }
 
 .btn--primary--green:active:not([disabled]) {
-  background: #39b19d; }
+  background: var(--status-success); }
 
 .btn--primary--green.effect:focus:not(:active):after {
-  border: 0 solid #39b19d; }
+  border: 0 solid var(--status-success); }
 
 .btn--primary:disabled, .btn--primary[disabled] {
   background: rgba(0, 0, 0, 0.04);
@@ -3509,7 +3547,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -3732,7 +3770,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -3857,7 +3895,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -3980,6 +4018,11 @@ html {
 .dc-input__field:disabled ~ svg .color1-fill {
   fill: var(--text-disabled); }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .dc-input__field:disabled {
+      color: var(--text-prominent); } } }
+
 .dc-input__field:focus {
   outline: none; }
 
@@ -4017,6 +4060,14 @@ html {
 .dc-input__field[type=textarea] ~ .dc-field-error {
   top: 10rem; }
 
+.dc-input__field:-webkit-autofill {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 0 30px var(--fill-normal) inset !important;
+  -webkit-text-fill-color: var(--text-prominent) !important; }
+
+.dc-input__field:-webkit-autofill:hover, .dc-input__field:-webkit-autofill:focus, .dc-input__field:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--fill-normal) inset !important; }
+
 .dc-input__leading-icon {
   margin-left: 1rem;
   top: 1rem;
@@ -4033,6 +4084,12 @@ html {
 .dc-input__trailing-icon {
   margin: 0 1.2rem 0 0 !important; }
 
+.dc-input__trailing-icon .color1-fill {
+  fill: var(--text-less-prominent); }
+
+.dc-input__trailing-icon .color1-stroke {
+  fill: var(--text-less-prominent); }
+
 .dc-input__label {
   color: var(--text-less-prominent);
   font-size: 1.4rem;
@@ -4041,7 +4098,7 @@ html {
   position: absolute;
   pointer-events: none;
   left: 1rem;
-  top: 1.3rem;
+  top: 0.9rem;
   transition: 0.25s ease all;
   transform-origin: top left; }
 
@@ -4166,7 +4223,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -4388,7 +4445,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -4420,8 +4478,7 @@ html {
   overflow: hidden; }
 
 .details-form {
-  flex-grow: 1;
-  margin-top: 3rem; }
+  flex-grow: 1; }
   .details-form .datepicker {
     max-width: none;
     max-width: initial;
@@ -4436,13 +4493,11 @@ html {
       margin-top: 8px; }
   .details-form__elements {
     flex-grow: 1;
-    margin: 0 auto;
+    margin: 1.2rem auto;
     width: 40%; }
     .details-form__elements-container {
-      height: calc(100vh - 438px);
+      height: calc(100% - 76px);
       overflow: hidden; }
-      .details-form__elements-container .details-form__elements {
-        margin-top: 8px; }
     .details-form__elements .dc-input label {
       top: 1.2rem;
       background-color: var(--general-main-2); }
@@ -4556,7 +4611,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -4779,7 +4834,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -5173,7 +5228,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -5294,7 +5349,7 @@ html {
 .dc-list__separator {
   display: flex;
   width: calc(100% - 3.2rem);
-  border-bottom: 1px solid var(--general-section-2);
+  border-bottom: 1px solid var(--general-section-1);
   margin: 1.6rem; }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5396,7 +5451,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -5469,8 +5524,8 @@ html {
   border-radius: 4px;
   display: flex;
   flex-direction: row;
-  background: var(--status-default);
-  color: #0e0e0e; }
+  background: var(--general-active);
+  color: var(--text-prominent); }
 
 .dc-popover__bubble__icon {
   flex-grow: 1;
@@ -5497,25 +5552,25 @@ html {
   left: 100%;
   top: 50%;
   margin-top: -5px;
-  border-left-color: var(--status-default); }
+  border-left-color: var(--general-active); }
 
 .dc-popover__bubble[data-popover-pos=right] .dc-popover__bubble__arrow {
   right: 100%;
   top: 50%;
   margin-top: -5px;
-  border-right-color: var(--status-default); }
+  border-right-color: var(--general-active); }
 
 .dc-popover__bubble[data-popover-pos=top] .dc-popover__bubble__arrow {
   left: 50%;
   top: 100%;
   margin-left: -5px;
-  border-top-color: var(--status-default); }
+  border-top-color: var(--general-active); }
 
 .dc-popover__bubble[data-popover-pos=bottom] .dc-popover__bubble__arrow {
   left: 50%;
   bottom: 100%;
   margin-left: -5px;
-  border-bottom-color: var(--status-default); }
+  border-bottom-color: var(--general-active); }
 
 .dc-popover__bubble--error {
   background-color: var(--status-danger); }
@@ -5624,7 +5679,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -5847,7 +5902,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -6046,7 +6101,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -6269,7 +6324,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -6394,7 +6449,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -6554,7 +6609,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -6777,7 +6832,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -6989,7 +7044,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -7212,7 +7267,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -7329,7 +7384,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -7552,7 +7607,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -7669,7 +7724,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -7891,7 +7946,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -8247,7 +8303,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -8530,7 +8586,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -8636,22 +8693,23 @@ html {
     transform: translate3d(0, -20px, 0); }
 
 .acc-switcher__new-account {
-  align-items: center;
   background-color: transparent;
-  border-radius: 4px;
-  display: flex;
-  height: 40px;
-  margin: 0 0 0.8em; }
+  border-radius: 4px; }
   .acc-switcher__new-account-link {
     background-color: transparent;
-    margin: 0;
-    padding: 0; }
+    margin: 0 0 0.8em;
+    padding: 0 0 0 0.8em;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 4rem;
+    align-items: center; }
     .acc-switcher__new-account-link .btn {
       background-color: transparent;
-      margin: 0;
       padding: 0; }
       .acc-switcher__new-account-link .btn__text {
-        color: #ffffff; }
+        color: var(--general-main-1);
+        margin: 0 0 0 0.5em; }
   .acc-switcher__new-account:hover {
     background-color: rgba(255, 68, 79, 0.08) !important; }
   .acc-switcher__new-account .btn__text {
@@ -8661,8 +8719,9 @@ html {
     align-items: center;
     background-color: transparent;
     display: flex;
-    margin: 0;
+    margin: 0 0 0.8em;
     padding: 0 0 0 0.8rem;
+    height: 4rem;
     justify-content: left; }
     .acc-switcher__new-account .btn > * {
       display: block;
@@ -8786,6 +8845,35 @@ html {
   display: flex;
   color: var(--text-prominent); }
 
+/** @define set-currency; weak */
+.set-currency .btn {
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: none;
+  color: var(--general-main-1);
+  text-decoration: none;
+  width: 11.6rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center; }
+
+/** @define no-currency; weak */
+.no-currency {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: unset;
+  text-transform: none;
+  color: var(--text-less-prominent);
+  line-height: 1.5;
+  text-align: right; }
+
 /*------------------------------------*
  *  # Constants
  *------------------------------------*/
@@ -8878,7 +8966,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -9161,7 +9249,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -9423,7 +9511,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -9646,7 +9734,7 @@ html {
   --button-secondary-default: #6e6e6e;
   --button-tertiary-default: transparent;
   --button-primary-hover: #eb3e48;
-  --button-secondary-hover: rgba(0,0,0,0.0784314);
+  --button-secondary-hover: transparentize(#fff, 0.92);
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
@@ -9844,7 +9932,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -10066,7 +10154,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -10256,7 +10345,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -10478,7 +10567,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -10639,7 +10729,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -10861,7 +10951,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -11061,7 +11152,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -11283,7 +11374,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -11413,7 +11505,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -11711,7 +11803,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -12175,7 +12267,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -12397,7 +12489,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -12431,11 +12524,9 @@ html {
 .dc-modal__container_real-account-signup-modal {
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease-in-out;
-  width: 900px;
-  overflow: unset; }
+  transition: all 0.3s ease-in-out; }
   .dc-modal__container_real-account-signup-modal--success {
-    width: 400px;
+    max-height: 365px;
     border-radius: 4px;
     overflow: hidden;
     max-width: 478px; }
@@ -12501,15 +12592,15 @@ html {
     text-transform: none;
     margin-top: 3rem; }
   .account-wizard h2 {
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.75;
     text-transform: none;
     margin-top: 2rem;
-    color: var(--text-general); }
+    color: var(--text-less-prominent); }
   .account-wizard h3 {
     font-size: 1.2em;
     color: rgba(0, 0, 0, 0.8);
@@ -12519,14 +12610,14 @@ html {
     line-height: 1.25;
     text-transform: none;
     color: var(--text-general);
-    margin-bottom: 3rem; }
+    margin-bottom: 1.6rem; }
   .account-wizard form {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-evenly;
     width: 100%;
-    padding: 2em; }
+    padding: 0 2em 2em; }
   .account-wizard__body {
     align-items: center;
     display: flex;
@@ -12536,15 +12627,21 @@ html {
     width: 100%; }
   .account-wizard__set-currency p {
     margin-top: 1em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
-    line-height: 1.25;
+    line-height: 1.5;
     text-transform: initial;
     color: var(--text-prominent); }
   .account-wizard__set-currency h2 {
+    font-size: 1.6em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.75;
     color: var(--text-prominent); }
   .account-wizard__btn-area {
     display: flex;
@@ -12686,7 +12783,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -12908,7 +13005,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -13128,7 +13226,7 @@ html {
     --button-secondary-default: #6e6e6e;
     --button-tertiary-default: transparent;
     --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0,0,0,0.07843);
+    --button-secondary-hover: transparentize(#ffffff, 0.92);
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
@@ -13411,7 +13509,8 @@ html {
   font-weight: bold;
   text-decoration: none; }
   .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
   .link--white {
     color: #ffffff; }
 
@@ -17361,7 +17460,8 @@ table {
   align-items: flex-start;
   justify-content: flex-start;
   border-radius: 4px;
-  background-color: var(--general-section-1); }
+  background-color: var(--general-section-1);
+  height: 100%; }
   .vertical-tab__content-container {
     position: relative;
     height: 100%;
@@ -17371,10 +17471,8 @@ table {
     flex-grow: 1; }
   .vertical-tab--full-screen {
     min-height: calc(100vh - 84px - 31px); }
-  .vertical-tab:not(.vertical-tab--full-screen) {
-    height: 600px; }
-    .vertical-tab:not(.vertical-tab--full-screen) .vertical-tab__content {
-      padding: 2.4em; }
+  .vertical-tab:not(.vertical-tab--full-screen) .vertical-tab__content {
+    padding: 2.4em; }
   .vertical-tab__action-bar {
     width: 100%;
     display: flex;
@@ -18064,10 +18162,6 @@ table {
 
 .payment-agent-transfer__done-button {
   margin-right: 2.4rem; }
-
-/** @define dc-modal; */
-.dc-modal__container_modal-cashier {
-  width: 904px; }
 
 /** @define dc-modal-header; */
 .dc-modal-header__modal-cashier {
