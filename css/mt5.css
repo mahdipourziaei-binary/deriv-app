@@ -493,7 +493,8 @@ html {
   line-height: 1.25;
   color: var(--text-prominent);
   text-transform: none;
-  margin-top: 2em; }
+  margin-top: 2em;
+  padding: 0 1.6em; }
 
 .mt5-success-topup__description p {
   font-size: 1.2em;
