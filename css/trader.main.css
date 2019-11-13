@@ -839,65 +839,65 @@ html {
             @extend %inline-icon.active;
         }
 */
-.advanced-simple-toggle__icon, .footer__link:hover .footer__icon, .footer__icon, .contract-drawer svg, .positions-drawer__icon-close svg, .input-wrapper__icon, .time-picker__icon, .account-settings-toggle svg, .calendar__icon, .contract-type-widget__select-arrow, .trade-type-info-dialog__header svg, .trade-type-info-navigation__icon, .datepicker__icon, .side-menu__icon, .cashier__transferred-icon, .info-box-container .info-box-longcode-icon {
+.advanced-simple-toggle__icon, .footer__link:hover .footer__icon, .footer__icon, .contract-drawer svg, .positions-drawer__icon-close svg, .input-wrapper__icon, .time-picker__icon, .account-settings-toggle svg, .contract-type-widget__select-arrow, .trade-type-info-dialog__header svg, .trade-type-info-navigation__icon, .side-menu__icon, .cashier__transferred-icon, .info-box-container .info-box-longcode-icon {
   /* postcss-bem-linter: ignore */
   /* postcss-bem-linter: ignore */
   /* postcss-bem-linter: ignore */
   /* postcss-bem-linter: ignore */ }
-  .advanced-simple-toggle__icon .color1-fill, .footer__link:hover .footer__icon .color1-fill, .footer__icon .color1-fill, .contract-drawer svg .color1-fill, .positions-drawer__icon-close svg .color1-fill, .input-wrapper__icon .color1-fill, .time-picker__icon .color1-fill, .account-settings-toggle svg .color1-fill, .calendar__icon .color1-fill, .contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg .color1-fill, .trade-type-info-navigation__icon .color1-fill, .datepicker__icon .color1-fill, .side-menu__icon .color1-fill, .cashier__transferred-icon .color1-fill, .info-box-container .info-box-longcode-icon .color1-fill {
+  .advanced-simple-toggle__icon .color1-fill, .footer__link:hover .footer__icon .color1-fill, .footer__icon .color1-fill, .contract-drawer svg .color1-fill, .positions-drawer__icon-close svg .color1-fill, .input-wrapper__icon .color1-fill, .time-picker__icon .color1-fill, .account-settings-toggle svg .color1-fill, .contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg .color1-fill, .trade-type-info-navigation__icon .color1-fill, .side-menu__icon .color1-fill, .cashier__transferred-icon .color1-fill, .info-box-container .info-box-longcode-icon .color1-fill {
     fill: var(--text-general); }
-  .advanced-simple-toggle__icon .color1-stroke, .footer__link:hover .footer__icon .color1-stroke, .footer__icon .color1-stroke, .contract-drawer svg .color1-stroke, .positions-drawer__icon-close svg .color1-stroke, .input-wrapper__icon .color1-stroke, .time-picker__icon .color1-stroke, .account-settings-toggle svg .color1-stroke, .calendar__icon .color1-stroke, .contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg .color1-stroke, .trade-type-info-navigation__icon .color1-stroke, .datepicker__icon .color1-stroke, .side-menu__icon .color1-stroke, .cashier__transferred-icon .color1-stroke, .info-box-container .info-box-longcode-icon .color1-stroke {
+  .advanced-simple-toggle__icon .color1-stroke, .footer__link:hover .footer__icon .color1-stroke, .footer__icon .color1-stroke, .contract-drawer svg .color1-stroke, .positions-drawer__icon-close svg .color1-stroke, .input-wrapper__icon .color1-stroke, .time-picker__icon .color1-stroke, .account-settings-toggle svg .color1-stroke, .contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg .color1-stroke, .trade-type-info-navigation__icon .color1-stroke, .side-menu__icon .color1-stroke, .cashier__transferred-icon .color1-stroke, .info-box-container .info-box-longcode-icon .color1-stroke {
     stroke: var(--text-general); }
-  .advanced-simple-toggle__icon .color2-fill, .footer__link:hover .footer__icon .color2-fill, .footer__icon .color2-fill, .contract-drawer svg .color2-fill, .positions-drawer__icon-close svg .color2-fill, .input-wrapper__icon .color2-fill, .time-picker__icon .color2-fill, .account-settings-toggle svg .color2-fill, .calendar__icon .color2-fill, .contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg .color2-fill, .trade-type-info-navigation__icon .color2-fill, .datepicker__icon .color2-fill, .side-menu__icon .color2-fill, .cashier__transferred-icon .color2-fill, .info-box-container .info-box-longcode-icon .color2-fill {
+  .advanced-simple-toggle__icon .color2-fill, .footer__link:hover .footer__icon .color2-fill, .footer__icon .color2-fill, .contract-drawer svg .color2-fill, .positions-drawer__icon-close svg .color2-fill, .input-wrapper__icon .color2-fill, .time-picker__icon .color2-fill, .account-settings-toggle svg .color2-fill, .contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg .color2-fill, .trade-type-info-navigation__icon .color2-fill, .side-menu__icon .color2-fill, .cashier__transferred-icon .color2-fill, .info-box-container .info-box-longcode-icon .color2-fill {
     fill: none; }
-  .advanced-simple-toggle__icon .color2-stroke, .footer__link:hover .footer__icon .color2-stroke, .footer__icon .color2-stroke, .contract-drawer svg .color2-stroke, .positions-drawer__icon-close svg .color2-stroke, .input-wrapper__icon .color2-stroke, .time-picker__icon .color2-stroke, .account-settings-toggle svg .color2-stroke, .calendar__icon .color2-stroke, .contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg .color2-stroke, .trade-type-info-navigation__icon .color2-stroke, .datepicker__icon .color2-stroke, .side-menu__icon .color2-stroke, .cashier__transferred-icon .color2-stroke, .info-box-container .info-box-longcode-icon .color2-stroke {
+  .advanced-simple-toggle__icon .color2-stroke, .footer__link:hover .footer__icon .color2-stroke, .footer__icon .color2-stroke, .contract-drawer svg .color2-stroke, .positions-drawer__icon-close svg .color2-stroke, .input-wrapper__icon .color2-stroke, .time-picker__icon .color2-stroke, .account-settings-toggle svg .color2-stroke, .contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg .color2-stroke, .trade-type-info-navigation__icon .color2-stroke, .side-menu__icon .color2-stroke, .cashier__transferred-icon .color2-stroke, .info-box-container .info-box-longcode-icon .color2-stroke {
     stroke: none; }
-  .active.advanced-simple-toggle__icon, .header__menu-link--active .header__icon, .footer__link:hover .active.footer__icon, .active.footer__icon, .ic-settings--active .ic-settings__icon, .contract-drawer svg.active, .positions-drawer__icon-close svg.active, .active.input-wrapper__icon, .active.time-picker__icon, .account-settings-toggle svg.active, .account-settings-toggle:hover svg, .active.calendar__icon, .active.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.active, .active.trade-type-info-navigation__icon, .active.datepicker__icon, .active.side-menu__icon, .active.cashier__transferred-icon, .info-box-container .active.info-box-longcode-icon {
+  .active.advanced-simple-toggle__icon, .header__menu-link--active .header__icon, .footer__link:hover .active.footer__icon, .active.footer__icon, .ic-settings--active .ic-settings__icon, .contract-drawer svg.active, .positions-drawer__icon-close svg.active, .active.input-wrapper__icon, .active.time-picker__icon, .account-settings-toggle svg.active, .account-settings-toggle:hover svg, .active.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.active, .active.trade-type-info-navigation__icon, .active.side-menu__icon, .active.cashier__transferred-icon, .info-box-container .active.info-box-longcode-icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .active.advanced-simple-toggle__icon .color1-fill, .header__menu-link--active .header__icon .color1-fill, .active.footer__icon .color1-fill, .ic-settings--active .ic-settings__icon .color1-fill, .contract-drawer svg.active .color1-fill, .positions-drawer__icon-close svg.active .color1-fill, .active.input-wrapper__icon .color1-fill, .active.time-picker__icon .color1-fill, .account-settings-toggle svg.active .color1-fill, .account-settings-toggle:hover svg .color1-fill, .active.calendar__icon .color1-fill, .active.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.active .color1-fill, .active.trade-type-info-navigation__icon .color1-fill, .active.datepicker__icon .color1-fill, .active.side-menu__icon .color1-fill, .active.cashier__transferred-icon .color1-fill, .info-box-container .active.info-box-longcode-icon .color1-fill {
+    .active.advanced-simple-toggle__icon .color1-fill, .header__menu-link--active .header__icon .color1-fill, .active.footer__icon .color1-fill, .ic-settings--active .ic-settings__icon .color1-fill, .contract-drawer svg.active .color1-fill, .positions-drawer__icon-close svg.active .color1-fill, .active.input-wrapper__icon .color1-fill, .active.time-picker__icon .color1-fill, .account-settings-toggle svg.active .color1-fill, .account-settings-toggle:hover svg .color1-fill, .active.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.active .color1-fill, .active.trade-type-info-navigation__icon .color1-fill, .active.side-menu__icon .color1-fill, .active.cashier__transferred-icon .color1-fill, .info-box-container .active.info-box-longcode-icon .color1-fill {
       fill: var(--text-prominent); }
-    .active.advanced-simple-toggle__icon .color1-stroke, .header__menu-link--active .header__icon .color1-stroke, .active.footer__icon .color1-stroke, .ic-settings--active .ic-settings__icon .color1-stroke, .contract-drawer svg.active .color1-stroke, .positions-drawer__icon-close svg.active .color1-stroke, .active.input-wrapper__icon .color1-stroke, .active.time-picker__icon .color1-stroke, .account-settings-toggle svg.active .color1-stroke, .account-settings-toggle:hover svg .color1-stroke, .active.calendar__icon .color1-stroke, .active.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.active .color1-stroke, .active.trade-type-info-navigation__icon .color1-stroke, .active.datepicker__icon .color1-stroke, .active.side-menu__icon .color1-stroke, .active.cashier__transferred-icon .color1-stroke, .info-box-container .active.info-box-longcode-icon .color1-stroke {
+    .active.advanced-simple-toggle__icon .color1-stroke, .header__menu-link--active .header__icon .color1-stroke, .active.footer__icon .color1-stroke, .ic-settings--active .ic-settings__icon .color1-stroke, .contract-drawer svg.active .color1-stroke, .positions-drawer__icon-close svg.active .color1-stroke, .active.input-wrapper__icon .color1-stroke, .active.time-picker__icon .color1-stroke, .account-settings-toggle svg.active .color1-stroke, .account-settings-toggle:hover svg .color1-stroke, .active.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.active .color1-stroke, .active.trade-type-info-navigation__icon .color1-stroke, .active.side-menu__icon .color1-stroke, .active.cashier__transferred-icon .color1-stroke, .info-box-container .active.info-box-longcode-icon .color1-stroke {
       stroke: var(--text-prominent); }
-    .active.advanced-simple-toggle__icon .color2-fill, .header__menu-link--active .header__icon .color2-fill, .active.footer__icon .color2-fill, .ic-settings--active .ic-settings__icon .color2-fill, .contract-drawer svg.active .color2-fill, .positions-drawer__icon-close svg.active .color2-fill, .active.input-wrapper__icon .color2-fill, .active.time-picker__icon .color2-fill, .account-settings-toggle svg.active .color2-fill, .account-settings-toggle:hover svg .color2-fill, .active.calendar__icon .color2-fill, .active.contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg.active .color2-fill, .active.trade-type-info-navigation__icon .color2-fill, .active.datepicker__icon .color2-fill, .active.side-menu__icon .color2-fill, .active.cashier__transferred-icon .color2-fill, .info-box-container .active.info-box-longcode-icon .color2-fill {
+    .active.advanced-simple-toggle__icon .color2-fill, .header__menu-link--active .header__icon .color2-fill, .active.footer__icon .color2-fill, .ic-settings--active .ic-settings__icon .color2-fill, .contract-drawer svg.active .color2-fill, .positions-drawer__icon-close svg.active .color2-fill, .active.input-wrapper__icon .color2-fill, .active.time-picker__icon .color2-fill, .account-settings-toggle svg.active .color2-fill, .account-settings-toggle:hover svg .color2-fill, .active.contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg.active .color2-fill, .active.trade-type-info-navigation__icon .color2-fill, .active.side-menu__icon .color2-fill, .active.cashier__transferred-icon .color2-fill, .info-box-container .active.info-box-longcode-icon .color2-fill {
       fill: none; }
-    .active.advanced-simple-toggle__icon .color2-stroke, .header__menu-link--active .header__icon .color2-stroke, .active.footer__icon .color2-stroke, .ic-settings--active .ic-settings__icon .color2-stroke, .contract-drawer svg.active .color2-stroke, .positions-drawer__icon-close svg.active .color2-stroke, .active.input-wrapper__icon .color2-stroke, .active.time-picker__icon .color2-stroke, .account-settings-toggle svg.active .color2-stroke, .account-settings-toggle:hover svg .color2-stroke, .active.calendar__icon .color2-stroke, .active.contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg.active .color2-stroke, .active.trade-type-info-navigation__icon .color2-stroke, .active.datepicker__icon .color2-stroke, .active.side-menu__icon .color2-stroke, .active.cashier__transferred-icon .color2-stroke, .info-box-container .active.info-box-longcode-icon .color2-stroke {
+    .active.advanced-simple-toggle__icon .color2-stroke, .header__menu-link--active .header__icon .color2-stroke, .active.footer__icon .color2-stroke, .ic-settings--active .ic-settings__icon .color2-stroke, .contract-drawer svg.active .color2-stroke, .positions-drawer__icon-close svg.active .color2-stroke, .active.input-wrapper__icon .color2-stroke, .active.time-picker__icon .color2-stroke, .account-settings-toggle svg.active .color2-stroke, .account-settings-toggle:hover svg .color2-stroke, .active.contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg.active .color2-stroke, .active.trade-type-info-navigation__icon .color2-stroke, .active.side-menu__icon .color2-stroke, .active.cashier__transferred-icon .color2-stroke, .info-box-container .active.info-box-longcode-icon .color2-stroke {
       stroke: none; }
-  .disabled.advanced-simple-toggle__icon, .footer__link:hover .disabled.footer__icon, .disabled.footer__icon, .contract-drawer svg.disabled, .positions-drawer__icon-close svg.disabled, .disabled.input-wrapper__icon, .disabled.time-picker__icon, .account-settings-toggle svg.disabled, .disabled.calendar__icon, .calendar__nav--disabled .calendar__icon, .disabled.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.disabled, .disabled.trade-type-info-navigation__icon, .disabled.datepicker__icon, .disabled.side-menu__icon, .disabled.cashier__transferred-icon, .info-box-container .disabled.info-box-longcode-icon, .portfolio-empty__icon {
+  .disabled.advanced-simple-toggle__icon, .footer__link:hover .disabled.footer__icon, .disabled.footer__icon, .contract-drawer svg.disabled, .positions-drawer__icon-close svg.disabled, .disabled.input-wrapper__icon, .disabled.time-picker__icon, .account-settings-toggle svg.disabled, .disabled.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.disabled, .disabled.trade-type-info-navigation__icon, .disabled.side-menu__icon, .disabled.cashier__transferred-icon, .info-box-container .disabled.info-box-longcode-icon, .portfolio-empty__icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .disabled.advanced-simple-toggle__icon .color1-fill, .disabled.footer__icon .color1-fill, .contract-drawer svg.disabled .color1-fill, .positions-drawer__icon-close svg.disabled .color1-fill, .disabled.input-wrapper__icon .color1-fill, .disabled.time-picker__icon .color1-fill, .account-settings-toggle svg.disabled .color1-fill, .disabled.calendar__icon .color1-fill, .calendar__nav--disabled .calendar__icon .color1-fill, .disabled.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.disabled .color1-fill, .disabled.trade-type-info-navigation__icon .color1-fill, .disabled.datepicker__icon .color1-fill, .disabled.side-menu__icon .color1-fill, .disabled.cashier__transferred-icon .color1-fill, .info-box-container .disabled.info-box-longcode-icon .color1-fill, .portfolio-empty__icon .color1-fill {
+    .disabled.advanced-simple-toggle__icon .color1-fill, .disabled.footer__icon .color1-fill, .contract-drawer svg.disabled .color1-fill, .positions-drawer__icon-close svg.disabled .color1-fill, .disabled.input-wrapper__icon .color1-fill, .disabled.time-picker__icon .color1-fill, .account-settings-toggle svg.disabled .color1-fill, .disabled.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.disabled .color1-fill, .disabled.trade-type-info-navigation__icon .color1-fill, .disabled.side-menu__icon .color1-fill, .disabled.cashier__transferred-icon .color1-fill, .info-box-container .disabled.info-box-longcode-icon .color1-fill, .portfolio-empty__icon .color1-fill {
       fill: var(--text-disabled); }
-    .disabled.advanced-simple-toggle__icon .color1-stroke, .disabled.footer__icon .color1-stroke, .contract-drawer svg.disabled .color1-stroke, .positions-drawer__icon-close svg.disabled .color1-stroke, .disabled.input-wrapper__icon .color1-stroke, .disabled.time-picker__icon .color1-stroke, .account-settings-toggle svg.disabled .color1-stroke, .disabled.calendar__icon .color1-stroke, .calendar__nav--disabled .calendar__icon .color1-stroke, .disabled.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.disabled .color1-stroke, .disabled.trade-type-info-navigation__icon .color1-stroke, .disabled.datepicker__icon .color1-stroke, .disabled.side-menu__icon .color1-stroke, .disabled.cashier__transferred-icon .color1-stroke, .info-box-container .disabled.info-box-longcode-icon .color1-stroke, .portfolio-empty__icon .color1-stroke {
+    .disabled.advanced-simple-toggle__icon .color1-stroke, .disabled.footer__icon .color1-stroke, .contract-drawer svg.disabled .color1-stroke, .positions-drawer__icon-close svg.disabled .color1-stroke, .disabled.input-wrapper__icon .color1-stroke, .disabled.time-picker__icon .color1-stroke, .account-settings-toggle svg.disabled .color1-stroke, .disabled.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.disabled .color1-stroke, .disabled.trade-type-info-navigation__icon .color1-stroke, .disabled.side-menu__icon .color1-stroke, .disabled.cashier__transferred-icon .color1-stroke, .info-box-container .disabled.info-box-longcode-icon .color1-stroke, .portfolio-empty__icon .color1-stroke {
       stroke: var(--text-disabled); }
-    .disabled.advanced-simple-toggle__icon .color2-fill, .disabled.footer__icon .color2-fill, .contract-drawer svg.disabled .color2-fill, .positions-drawer__icon-close svg.disabled .color2-fill, .disabled.input-wrapper__icon .color2-fill, .disabled.time-picker__icon .color2-fill, .account-settings-toggle svg.disabled .color2-fill, .disabled.calendar__icon .color2-fill, .calendar__nav--disabled .calendar__icon .color2-fill, .disabled.contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg.disabled .color2-fill, .disabled.trade-type-info-navigation__icon .color2-fill, .disabled.datepicker__icon .color2-fill, .disabled.side-menu__icon .color2-fill, .disabled.cashier__transferred-icon .color2-fill, .info-box-container .disabled.info-box-longcode-icon .color2-fill, .portfolio-empty__icon .color2-fill {
+    .disabled.advanced-simple-toggle__icon .color2-fill, .disabled.footer__icon .color2-fill, .contract-drawer svg.disabled .color2-fill, .positions-drawer__icon-close svg.disabled .color2-fill, .disabled.input-wrapper__icon .color2-fill, .disabled.time-picker__icon .color2-fill, .account-settings-toggle svg.disabled .color2-fill, .disabled.contract-type-widget__select-arrow .color2-fill, .trade-type-info-dialog__header svg.disabled .color2-fill, .disabled.trade-type-info-navigation__icon .color2-fill, .disabled.side-menu__icon .color2-fill, .disabled.cashier__transferred-icon .color2-fill, .info-box-container .disabled.info-box-longcode-icon .color2-fill, .portfolio-empty__icon .color2-fill {
       fill: none; }
-    .disabled.advanced-simple-toggle__icon .color2-stroke, .disabled.footer__icon .color2-stroke, .contract-drawer svg.disabled .color2-stroke, .positions-drawer__icon-close svg.disabled .color2-stroke, .disabled.input-wrapper__icon .color2-stroke, .disabled.time-picker__icon .color2-stroke, .account-settings-toggle svg.disabled .color2-stroke, .disabled.calendar__icon .color2-stroke, .calendar__nav--disabled .calendar__icon .color2-stroke, .disabled.contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg.disabled .color2-stroke, .disabled.trade-type-info-navigation__icon .color2-stroke, .disabled.datepicker__icon .color2-stroke, .disabled.side-menu__icon .color2-stroke, .disabled.cashier__transferred-icon .color2-stroke, .info-box-container .disabled.info-box-longcode-icon .color2-stroke, .portfolio-empty__icon .color2-stroke {
+    .disabled.advanced-simple-toggle__icon .color2-stroke, .disabled.footer__icon .color2-stroke, .contract-drawer svg.disabled .color2-stroke, .positions-drawer__icon-close svg.disabled .color2-stroke, .disabled.input-wrapper__icon .color2-stroke, .disabled.time-picker__icon .color2-stroke, .account-settings-toggle svg.disabled .color2-stroke, .disabled.contract-type-widget__select-arrow .color2-stroke, .trade-type-info-dialog__header svg.disabled .color2-stroke, .disabled.trade-type-info-navigation__icon .color2-stroke, .disabled.side-menu__icon .color2-stroke, .disabled.cashier__transferred-icon .color2-stroke, .info-box-container .disabled.info-box-longcode-icon .color2-stroke, .portfolio-empty__icon .color2-stroke {
       stroke: none; }
-  .white.advanced-simple-toggle__icon, .footer__link:hover .white.footer__icon, .white.footer__icon, .contract-drawer svg.white, .positions-drawer__icon-close svg.white, .white.input-wrapper__icon, .white.time-picker__icon, .account-settings-toggle svg.white, .white.calendar__icon, .white.contract-type-widget__select-arrow, .contract-type-item__icon:hover svg, .trade-type-info-dialog__header svg.white, .white.trade-type-info-navigation__icon, .white.datepicker__icon, .white.side-menu__icon, .btn-purchase__info--left .btn-purchase__icon_wrapper, .white.cashier__transferred-icon, .info-box-container .white.info-box-longcode-icon {
+  .white.advanced-simple-toggle__icon, .footer__link:hover .white.footer__icon, .white.footer__icon, .contract-drawer svg.white, .positions-drawer__icon-close svg.white, .white.input-wrapper__icon, .white.time-picker__icon, .account-settings-toggle svg.white, .white.contract-type-widget__select-arrow, .contract-type-item__icon:hover svg, .trade-type-info-dialog__header svg.white, .white.trade-type-info-navigation__icon, .white.side-menu__icon, .btn-purchase__info--left .btn-purchase__icon_wrapper, .white.cashier__transferred-icon, .info-box-container .white.info-box-longcode-icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .white.advanced-simple-toggle__icon .color1-fill, .white.footer__icon .color1-fill, .contract-drawer svg.white .color1-fill, .positions-drawer__icon-close svg.white .color1-fill, .white.input-wrapper__icon .color1-fill, .white.time-picker__icon .color1-fill, .account-settings-toggle svg.white .color1-fill, .white.calendar__icon .color1-fill, .white.contract-type-widget__select-arrow .color1-fill, .contract-type-item__icon:hover svg .color1-fill, .trade-type-info-dialog__header svg.white .color1-fill, .white.trade-type-info-navigation__icon .color1-fill, .white.datepicker__icon .color1-fill, .white.side-menu__icon .color1-fill, .btn-purchase__info--left .btn-purchase__icon_wrapper .color1-fill, .white.cashier__transferred-icon .color1-fill, .info-box-container .white.info-box-longcode-icon .color1-fill {
+    .white.advanced-simple-toggle__icon .color1-fill, .white.footer__icon .color1-fill, .contract-drawer svg.white .color1-fill, .positions-drawer__icon-close svg.white .color1-fill, .white.input-wrapper__icon .color1-fill, .white.time-picker__icon .color1-fill, .account-settings-toggle svg.white .color1-fill, .white.contract-type-widget__select-arrow .color1-fill, .contract-type-item__icon:hover svg .color1-fill, .trade-type-info-dialog__header svg.white .color1-fill, .white.trade-type-info-navigation__icon .color1-fill, .white.side-menu__icon .color1-fill, .btn-purchase__info--left .btn-purchase__icon_wrapper .color1-fill, .white.cashier__transferred-icon .color1-fill, .info-box-container .white.info-box-longcode-icon .color1-fill {
       fill: var(--text-prominent); }
-    .white.advanced-simple-toggle__icon .color1-stroke, .white.footer__icon .color1-stroke, .contract-drawer svg.white .color1-stroke, .positions-drawer__icon-close svg.white .color1-stroke, .white.input-wrapper__icon .color1-stroke, .white.time-picker__icon .color1-stroke, .account-settings-toggle svg.white .color1-stroke, .white.calendar__icon .color1-stroke, .white.contract-type-widget__select-arrow .color1-stroke, .contract-type-item__icon:hover svg .color1-stroke, .trade-type-info-dialog__header svg.white .color1-stroke, .white.trade-type-info-navigation__icon .color1-stroke, .white.datepicker__icon .color1-stroke, .white.side-menu__icon .color1-stroke, .btn-purchase__info--left .btn-purchase__icon_wrapper .color1-stroke, .white.cashier__transferred-icon .color1-stroke, .info-box-container .white.info-box-longcode-icon .color1-stroke {
+    .white.advanced-simple-toggle__icon .color1-stroke, .white.footer__icon .color1-stroke, .contract-drawer svg.white .color1-stroke, .positions-drawer__icon-close svg.white .color1-stroke, .white.input-wrapper__icon .color1-stroke, .white.time-picker__icon .color1-stroke, .account-settings-toggle svg.white .color1-stroke, .white.contract-type-widget__select-arrow .color1-stroke, .contract-type-item__icon:hover svg .color1-stroke, .trade-type-info-dialog__header svg.white .color1-stroke, .white.trade-type-info-navigation__icon .color1-stroke, .white.side-menu__icon .color1-stroke, .btn-purchase__info--left .btn-purchase__icon_wrapper .color1-stroke, .white.cashier__transferred-icon .color1-stroke, .info-box-container .white.info-box-longcode-icon .color1-stroke {
       stroke: var(--text-prominent); }
-  .border_hover_color.advanced-simple-toggle__icon, .footer__link:hover .border_hover_color.footer__icon, .border_hover_color.footer__icon, .contract-drawer svg.border_hover_color, .positions-drawer__icon-close svg.border_hover_color, .border_hover_color.input-wrapper__icon, .border_hover_color.time-picker__icon, .account-settings-toggle svg.border_hover_color, .border_hover_color.calendar__icon, .border_hover_color.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.border_hover_color, .border_hover_color.trade-type-info-navigation__icon, .border_hover_color.datepicker__icon, .border_hover_color.side-menu__icon, .border_hover_color.cashier__transferred-icon, .info-box-container .border_hover_color.info-box-longcode-icon {
+  .border_hover_color.advanced-simple-toggle__icon, .footer__link:hover .border_hover_color.footer__icon, .border_hover_color.footer__icon, .contract-drawer svg.border_hover_color, .positions-drawer__icon-close svg.border_hover_color, .border_hover_color.input-wrapper__icon, .border_hover_color.time-picker__icon, .account-settings-toggle svg.border_hover_color, .border_hover_color.contract-type-widget__select-arrow, .trade-type-info-dialog__header svg.border_hover_color, .border_hover_color.trade-type-info-navigation__icon, .border_hover_color.side-menu__icon, .border_hover_color.cashier__transferred-icon, .info-box-container .border_hover_color.info-box-longcode-icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .border_hover_color.advanced-simple-toggle__icon .color1-fill, .border_hover_color.footer__icon .color1-fill, .contract-drawer svg.border_hover_color .color1-fill, .positions-drawer__icon-close svg.border_hover_color .color1-fill, .border_hover_color.input-wrapper__icon .color1-fill, .border_hover_color.time-picker__icon .color1-fill, .account-settings-toggle svg.border_hover_color .color1-fill, .border_hover_color.calendar__icon .color1-fill, .border_hover_color.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.border_hover_color .color1-fill, .border_hover_color.trade-type-info-navigation__icon .color1-fill, .border_hover_color.datepicker__icon .color1-fill, .border_hover_color.side-menu__icon .color1-fill, .border_hover_color.cashier__transferred-icon .color1-fill, .info-box-container .border_hover_color.info-box-longcode-icon .color1-fill {
+    .border_hover_color.advanced-simple-toggle__icon .color1-fill, .border_hover_color.footer__icon .color1-fill, .contract-drawer svg.border_hover_color .color1-fill, .positions-drawer__icon-close svg.border_hover_color .color1-fill, .border_hover_color.input-wrapper__icon .color1-fill, .border_hover_color.time-picker__icon .color1-fill, .account-settings-toggle svg.border_hover_color .color1-fill, .border_hover_color.contract-type-widget__select-arrow .color1-fill, .trade-type-info-dialog__header svg.border_hover_color .color1-fill, .border_hover_color.trade-type-info-navigation__icon .color1-fill, .border_hover_color.side-menu__icon .color1-fill, .border_hover_color.cashier__transferred-icon .color1-fill, .info-box-container .border_hover_color.info-box-longcode-icon .color1-fill {
       fill: var(--text-prominent); }
-    .border_hover_color.advanced-simple-toggle__icon .color1-stroke, .border_hover_color.footer__icon .color1-stroke, .contract-drawer svg.border_hover_color .color1-stroke, .positions-drawer__icon-close svg.border_hover_color .color1-stroke, .border_hover_color.input-wrapper__icon .color1-stroke, .border_hover_color.time-picker__icon .color1-stroke, .account-settings-toggle svg.border_hover_color .color1-stroke, .border_hover_color.calendar__icon .color1-stroke, .border_hover_color.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.border_hover_color .color1-stroke, .border_hover_color.trade-type-info-navigation__icon .color1-stroke, .border_hover_color.datepicker__icon .color1-stroke, .border_hover_color.side-menu__icon .color1-stroke, .border_hover_color.cashier__transferred-icon .color1-stroke, .info-box-container .border_hover_color.info-box-longcode-icon .color1-stroke {
+    .border_hover_color.advanced-simple-toggle__icon .color1-stroke, .border_hover_color.footer__icon .color1-stroke, .contract-drawer svg.border_hover_color .color1-stroke, .positions-drawer__icon-close svg.border_hover_color .color1-stroke, .border_hover_color.input-wrapper__icon .color1-stroke, .border_hover_color.time-picker__icon .color1-stroke, .account-settings-toggle svg.border_hover_color .color1-stroke, .border_hover_color.contract-type-widget__select-arrow .color1-stroke, .trade-type-info-dialog__header svg.border_hover_color .color1-stroke, .border_hover_color.trade-type-info-navigation__icon .color1-stroke, .border_hover_color.side-menu__icon .color1-stroke, .border_hover_color.cashier__transferred-icon .color1-stroke, .info-box-container .border_hover_color.info-box-longcode-icon .color1-stroke {
       stroke: var(--text-prominent); }
-  .secondary.advanced-simple-toggle__icon, .footer__link:hover .secondary.footer__icon, .secondary.footer__icon, .contract-drawer svg.secondary, .positions-drawer__icon-close svg.secondary, .secondary.input-wrapper__icon, .secondary.time-picker__icon, .account-settings-toggle svg.secondary, .secondary.calendar__icon, .secondary.contract-type-widget__select-arrow, .contract-type-item__icon svg, .trade-type-info-dialog__header svg.secondary, .secondary.trade-type-info-navigation__icon, .secondary.datepicker__icon, .secondary.side-menu__icon, .secondary.cashier__transferred-icon, .info-box-container .secondary.info-box-longcode-icon {
+  .secondary.advanced-simple-toggle__icon, .footer__link:hover .secondary.footer__icon, .secondary.footer__icon, .contract-drawer svg.secondary, .positions-drawer__icon-close svg.secondary, .secondary.input-wrapper__icon, .secondary.time-picker__icon, .account-settings-toggle svg.secondary, .secondary.contract-type-widget__select-arrow, .contract-type-item__icon svg, .trade-type-info-dialog__header svg.secondary, .secondary.trade-type-info-navigation__icon, .secondary.side-menu__icon, .secondary.cashier__transferred-icon, .info-box-container .secondary.info-box-longcode-icon {
     /* postcss-bem-linter: ignore */
     /* postcss-bem-linter: ignore */ }
-    .secondary.advanced-simple-toggle__icon .color1-fill, .secondary.footer__icon .color1-fill, .contract-drawer svg.secondary .color1-fill, .positions-drawer__icon-close svg.secondary .color1-fill, .secondary.input-wrapper__icon .color1-fill, .secondary.time-picker__icon .color1-fill, .account-settings-toggle svg.secondary .color1-fill, .secondary.calendar__icon .color1-fill, .secondary.contract-type-widget__select-arrow .color1-fill, .contract-type-item__icon svg .color1-fill, .trade-type-info-dialog__header svg.secondary .color1-fill, .secondary.trade-type-info-navigation__icon .color1-fill, .secondary.datepicker__icon .color1-fill, .secondary.side-menu__icon .color1-fill, .secondary.cashier__transferred-icon .color1-fill, .info-box-container .secondary.info-box-longcode-icon .color1-fill {
+    .secondary.advanced-simple-toggle__icon .color1-fill, .secondary.footer__icon .color1-fill, .contract-drawer svg.secondary .color1-fill, .positions-drawer__icon-close svg.secondary .color1-fill, .secondary.input-wrapper__icon .color1-fill, .secondary.time-picker__icon .color1-fill, .account-settings-toggle svg.secondary .color1-fill, .secondary.contract-type-widget__select-arrow .color1-fill, .contract-type-item__icon svg .color1-fill, .trade-type-info-dialog__header svg.secondary .color1-fill, .secondary.trade-type-info-navigation__icon .color1-fill, .secondary.side-menu__icon .color1-fill, .secondary.cashier__transferred-icon .color1-fill, .info-box-container .secondary.info-box-longcode-icon .color1-fill {
       fill: var(--text-less-prominent); }
-    .secondary.advanced-simple-toggle__icon .color1-stroke, .secondary.footer__icon .color1-stroke, .contract-drawer svg.secondary .color1-stroke, .positions-drawer__icon-close svg.secondary .color1-stroke, .secondary.input-wrapper__icon .color1-stroke, .secondary.time-picker__icon .color1-stroke, .account-settings-toggle svg.secondary .color1-stroke, .secondary.calendar__icon .color1-stroke, .secondary.contract-type-widget__select-arrow .color1-stroke, .contract-type-item__icon svg .color1-stroke, .trade-type-info-dialog__header svg.secondary .color1-stroke, .secondary.trade-type-info-navigation__icon .color1-stroke, .secondary.datepicker__icon .color1-stroke, .secondary.side-menu__icon .color1-stroke, .secondary.cashier__transferred-icon .color1-stroke, .info-box-container .secondary.info-box-longcode-icon .color1-stroke {
+    .secondary.advanced-simple-toggle__icon .color1-stroke, .secondary.footer__icon .color1-stroke, .contract-drawer svg.secondary .color1-stroke, .positions-drawer__icon-close svg.secondary .color1-stroke, .secondary.input-wrapper__icon .color1-stroke, .secondary.time-picker__icon .color1-stroke, .account-settings-toggle svg.secondary .color1-stroke, .secondary.contract-type-widget__select-arrow .color1-stroke, .contract-type-item__icon svg .color1-stroke, .trade-type-info-dialog__header svg.secondary .color1-stroke, .secondary.trade-type-info-navigation__icon .color1-stroke, .secondary.side-menu__icon .color1-stroke, .secondary.cashier__transferred-icon .color1-stroke, .info-box-container .secondary.info-box-longcode-icon .color1-stroke {
       stroke: var(--text-less-prominent); }
 
 /* postcss-bem-linter: ignore */
@@ -976,7 +976,7 @@ html {
   transition: none !important; }
 
 /** @define absolute-center-v */
-.absolute-center-v, .time-picker__icon, .calendar__icon, .datepicker__icon {
+.absolute-center-v, .time-picker__icon {
   position: absolute;
   margin: auto;
   top: 0;
@@ -995,7 +995,7 @@ html {
     color: #ffffff; }
 
 /** @define icon */
-.icon--centered, .time-picker__icon, .datepicker__icon {
+.icon--centered, .time-picker__icon {
   top: 0.8em;
   left: 5%; }
 
@@ -3928,211 +3928,6 @@ table {
   .allow-equals__tooltip {
     margin-top: 1em; }
 
-/** @define calendar */
-.calendar {
-  position: absolute;
-  top: 0;
-  outline: 0;
-  border-radius: 5px;
-  z-index: 999;
-  box-sizing: border-box;
-  font-size: 1em;
-  background: var(--general-main-2);
-  box-shadow: 0 2px 8px 0 var(--shadow-menu); }
-  .calendar__header, .calendar__footer {
-    position: relative;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    height: 5em;
-    border-radius: 5px;
-    padding: 1.6em; }
-  .calendar__header {
-    -webkit-box-pack: center;
-            justify-content: center; }
-  .calendar__body {
-    border-top: 0.1em solid var(--general-section-2);
-    border-bottom: 0.1em solid var(--general-section-2); }
-    .calendar__body--date, .calendar__body--month, .calendar__body--year, .calendar__body--decade {
-      display: grid;
-      grid-gap: 1.2em;
-      padding: 0.8em 2em; }
-      .calendar__body--date .calendar__cell, .calendar__body--month .calendar__cell, .calendar__body--year .calendar__cell, .calendar__body--decade .calendar__cell {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-                align-items: center;
-        border-radius: 5px; }
-    .calendar__body--date {
-      grid-template-columns: repeat(7, 2.4em);
-      grid-auto-rows: 2.4em; }
-      .calendar__body--date .calendar__cell {
-        width: 100%;
-        height: 100%; }
-    .calendar__body--month, .calendar__body--year, .calendar__body--decade {
-      grid-template-columns: repeat(3, minmax(7.2em, 1fr));
-      grid-auto-rows: minmax(4.2em, auto); }
-      .calendar__body--month .calendar__cell, .calendar__body--year .calendar__cell, .calendar__body--decade .calendar__cell {
-        width: 5.6em;
-        height: 3.2em; }
-    .calendar__body--decade .calendar__cell {
-      width: 100%; }
-  .calendar__icon {
-    cursor: pointer;
-    right: 5%; }
-    .calendar__icon--today:hover {
-      cursor: pointer; }
-  .calendar__nav {
-    border: none;
-    outline: none;
-    background: none;
-    position: absolute;
-    padding: 0 0.5em;
-    height: 1.4em; }
-    .calendar__nav:hover:not(.calendar__nav--disabled) {
-      cursor: pointer; }
-    .calendar__nav--is-hidden {
-      display: none; }
-    .calendar__nav--prev-year {
-      left: 7%; }
-    .calendar__nav--next-year {
-      right: 7%; }
-    .calendar__nav--prev-month {
-      left: 14%; }
-    .calendar__nav--next-month {
-      right: 14%; }
-  .calendar__btn {
-    text-align: center;
-    padding: 0em 0.2em;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none; }
-    .calendar__btn--disabled {
-      cursor: default;
-      -webkit-transition: none;
-      transition: none; }
-    .calendar__btn--select {
-      font-size: 1.4rem;
-      color: var(--text-general);
-      font-weight: 700;
-      text-transform: capitalize;
-      text-align: left;
-      line-height: 1.5;
-      color: var(--text-prominent); }
-  .calendar__text {
-    font-size: 1.2rem;
-    color: var(--text-general);
-    font-weight: 400;
-    text-transform: unset;
-    text-align: center;
-    line-height: 1.25;
-    color: var(--text-general); }
-    .calendar__text--bold {
-      font-weight: bold; }
-  .calendar__cell {
-    font-size: 1.2rem;
-    color: var(--text-general);
-    font-weight: 400;
-    text-transform: capitalize;
-    text-align: left;
-    line-height: 1.25;
-    align-self: center;
-    justify-self: center;
-    position: relative;
-    cursor: pointer;
-    color: var(--text-general); }
-    .calendar__cell:hover:not(.calendar__cell--disabled) {
-      color: var(--text-general);
-      background: var(--state-hover); }
-    .calendar__cell:nth-child(7n):before {
-      padding: 0;
-      border-radius: 4px; }
-    .calendar__cell:nth-child(7n + 1):before {
-      left: 0;
-      border-radius: 4px; }
-    .calendar__cell:nth-child(7n + 1):after {
-      content: none; }
-    .calendar__cell--bold {
-      font-size: 1.4rem;
-      color: var(--text-general);
-      font-weight: 700;
-      text-transform: capitalize;
-      text-align: left;
-      line-height: 1.5;
-      color: var(--text-prominent); }
-    .calendar__cell--disabled:hover {
-      cursor: default; }
-    .calendar__cell--disabled:not(.calendar__cell--today), .calendar__cell--other:not(.calendar__cell--today) {
-      color: var(--text-disabled);
-      -webkit-transition: none;
-      transition: none; }
-    .calendar__cell--is-hidden {
-      opacity: 0;
-      cursor: auto;
-      cursor: initial; }
-    .calendar__cell--today {
-      font-weight: 400; }
-      .calendar__cell--today-duration {
-        background: var(--state-active) !important; }
-    .calendar__cell--active {
-      font-weight: bold;
-      color: var(--text-prominent);
-      background: var(--state-active); }
-      .calendar__cell--active:hover {
-        background: var(--state-active); }
-      .calendar__cell--active-duration {
-        background: var(--state-active); }
-        .calendar__cell--active-duration:after {
-          position: absolute;
-          content: '';
-          width: 100%;
-          top: 0;
-          right: 50%;
-          z-index: -1;
-          height: 100%;
-          padding-left: 10px;
-          background: var(--state-active); }
-    .calendar__cell--between {
-      font-weight: bold;
-      color: var(--text-prominent);
-      background: var(--state-active); }
-      .calendar__cell--between-hover:before {
-        position: absolute;
-        content: '';
-        width: 100%;
-        z-index: -2;
-        height: 100%;
-        padding-left: 32px;
-        background: var(--state-hover); }
-      .calendar__cell--between:hover {
-        background: var(--state-active); }
-      .calendar__cell--between:before {
-        position: absolute;
-        content: '';
-        width: 100%;
-        z-index: -1;
-        height: 100%;
-        padding-left: 32px;
-        background: var(--state-active); }
-    .calendar__cell-tooltip {
-      position: absolute;
-      display: inline-grid;
-      cursor: default;
-      height: 0;
-      top: 0;
-      left: 0;
-      -webkit-box-pack: center;
-              justify-content: center;
-      width: 100%; }
-      .calendar__cell-tooltip-icon {
-        margin-top: 0.1em;
-        display: inherit; }
-
 /** @define card-list */
 .card-list {
   overflow: auto; }
@@ -4608,68 +4403,6 @@ table {
       background-color: var(--brand-red-coral); }
   .trade-type-info-navigation__icon {
     cursor: pointer; }
-
-/** @define datepicker */
-.datepicker {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  max-width: 280px; }
-  .datepicker__input-field {
-    border-radius: 4px;
-    margin-top: 0.8em; }
-  .datepicker__input {
-    background: var(--fill-normal);
-    border: 1px solid var(--border-normal); }
-    .datepicker__input:hover {
-      border-color: var(--border-hover); }
-    .datepicker__input:focus, .datepicker__input:active {
-      border-color: var(--border-active); }
-    .datepicker__input::-ms-clear {
-      display: none; }
-  .datepicker__icon {
-    opacity: 1;
-    -webkit-transition: opacity 0.1s;
-    transition: opacity 0.1s; }
-    .datepicker__icon:hover {
-      cursor: pointer; }
-    .datepicker__icon--is-hidden {
-      opacity: 0; }
-    .datepicker__icon--with-label {
-      top: 35px !important; }
-  .datepicker__picker {
-    position: absolute;
-    top: 7px;
-    z-index: 2;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-    .datepicker__picker--left-enter, .datepicker__picker--left-exit {
-      -webkit-transform: translate3d(-275px, 0, 0);
-              transform: translate3d(-275px, 0, 0);
-      opacity: 0; }
-    .datepicker__picker--left-enter-done {
-      -webkit-transform: translate3d(-295px, 0, 0);
-              transform: translate3d(-295px, 0, 0);
-      opacity: 1; }
-    .datepicker__picker--left-enter-done, .datepicker__picker--left-exit {
-      -webkit-transition: opacity 0.25s linear, -webkit-transform 0.25s ease;
-      transition: opacity 0.25s linear, -webkit-transform 0.25s ease;
-      transition: transform 0.25s ease, opacity 0.25s linear;
-      transition: transform 0.25s ease, opacity 0.25s linear, -webkit-transform 0.25s ease; }
-    .datepicker__picker--bottom-enter, .datepicker__picker--bottom-exit {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0; }
-    .datepicker__picker--bottom-enter-done {
-      -webkit-transform: translate3d(0, 33px, 0);
-              transform: translate3d(0, 33px, 0);
-      opacity: 1; }
-    .datepicker__picker--bottom-enter-done, .datepicker__picker--bottom-exit {
-      -webkit-transition: opacity 0.25s linear, -webkit-transform 0.25s ease;
-      transition: opacity 0.25s linear, -webkit-transform 0.25s ease;
-      transition: transform 0.25s ease, opacity 0.25s linear;
-      transition: transform 0.25s ease, opacity 0.25s linear, -webkit-transform 0.25s ease; }
 
 /** @define error-box */
 .error-box {
