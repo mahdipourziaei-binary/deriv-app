@@ -1,0 +1,2 @@
+(window.webpackJsonpderiv_bot=window.webpackJsonpderiv_bot||[]).push([[31],{438:function(e){e.exports=JSON.parse('{"text":["This block displays a modal window with a given message.","Strategy execution is being paused until user clicks \'OK\'"]}')}}]);
+//# sourceMappingURL=bot.text_print-json.565a5ae4c88d3b160a06.js.map
