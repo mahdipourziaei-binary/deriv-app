@@ -10573,23 +10573,23 @@ table {
   height: 4rem;
   margin: 3.2rem auto 0; }
 
-/** @define payment-agent-transfer */
-.payment-agent-transfer__header {
+/** @define payment-agent-transfer; weak */
+div.payment-agent-transfer__header {
   margin-bottom: 2.8rem; }
 
-.payment-agent-transfer__input {
+div.payment-agent-transfer__input {
   width: 29.6rem;
   display: -webkit-inline-box;
   display: inline-flex; }
-  .payment-agent-transfer__input:not(:first-child) {
+  div.payment-agent-transfer__input:not(:first-child) {
     margin-left: 2.4rem; }
 
-.payment-agent-transfer__buttons {
+div.payment-agent-transfer__buttons {
   margin-left: -10.7rem;
   -webkit-box-align: center;
           align-items: center; }
 
-.payment-agent-transfer__done-button {
+div.payment-agent-transfer__done-button {
   margin-right: 2.4rem; }
 
 /** @define dc-modal-header; */
