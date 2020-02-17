@@ -774,38 +774,17 @@
             @extend %inline-icon.active;
         }
 */
-.dc-icon {
-  --fill-color1: var(--text-general);
-  --fill-color2: var(--text-less-prominent);
-  --fill-color3: var(--general-section-1); }
-
-.dc-icon--disabled {
-  --fill-color1: var(--text-disabled);
-  --fill-color2: var(--text-disabled); }
-
-.dc-icon--active {
-  --fill-color1: #fff;
-  --fill-color2: #fff; }
-
-.dc-icon--green {
-  --fill-color1: var(--text-profit-success);
-  --fill-color2: var(--text-profit-success);
-  --fill-color3: #fff; }
-
-.dc-icon--red {
-  --fill-color1: var(--text-loss-danger);
-  --fill-color2: var(--text-loss-danger);
-  --fill-color3: #fff; }
-
-.dc-icon--secondary {
-  --fill-color1: var(--text-less-prominent);
-  --fill-color2: var(--text-less-prominent);
-  --fill-color3: #fff; }
-
-.dc-icon--brand {
-  --fill-color1: var(--brand-red-coral);
-  --fill-color2: var(--brand-secondary);
-  --fill-color3: #fff; }
+.dc-counter {
+  align-items: center;
+  background: var(--status-danger);
+  border-radius: 0.8rem;
+  color: var(--text-colored-background);
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  padding: 3px 5px; }
 
 .dc-vertical-tab {
   display: flex;
@@ -1657,6 +1636,9 @@ html,
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   display: block; }
+
+.btn__group .btn + .btn {
+  margin-left: 8px; }
 
 .btn .initial-loader--btn {
   background-color: unset; }
@@ -3320,8 +3302,18 @@ html,
   transform: scale(1, 1);
   opacity: 1; }
 
+.dc-dropdown-list__group-header {
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--brand-red-coral);
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .dc-dropdown-list__item {
-  height: 40px;
+  min-height: 40px;
   display: flex;
   align-items: center;
   padding: 1rem 1.6rem;
@@ -3333,6 +3325,15 @@ html,
 
 .dc-dropdown-list__item--active {
   background-color: var(--state-active); }
+
+.dc-dropdown-list__item-icon {
+  margin-right: 8px; }
+
+.dc-dropdown-list__separator {
+  display: flex;
+  width: calc(100% - 3.2rem);
+  border-bottom: 1px solid var(--border-normal);
+  margin: 1.6rem; }
 
 .dc-autocomplete {
   width: 100%;
@@ -3714,6 +3715,9 @@ html,
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   display: block; }
+
+.btn__group .btn + .btn {
+  margin-left: 8px; }
 
 .btn .initial-loader--btn {
   background-color: unset; }
