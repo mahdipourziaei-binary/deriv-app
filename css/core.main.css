@@ -5283,12 +5283,14 @@ html,
     transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
     .acc-info__select-arrow--invert {
       transform: rotate(180deg); }
-  .acc-info:hover:not(.show) {
+  .acc-info:hover:not(.show):not(.acc-info--is-disabled) {
     background: var(--state-hover); }
-    .acc-info:hover:not(.show) .symbols {
+    .acc-info:hover:not(.show):not(.acc-info--is-disabled) .symbols {
       background: transparent; }
   .acc-info--is-virtual .acc-info__balance {
     color: var(--text-profit-success); }
+  .acc-info--is-disabled {
+    cursor: not-allowed; }
   .acc-info--show .acc-info__select-arrow {
     transform: rotate(180deg); }
   .acc-info--show .acc-info__select-arrow--invert {
