@@ -1,5 +1,5 @@
-import { urlFor } from '_common/language';
 import { getLanguage, getAllLanguages } from '@deriv/translations';
+import { urlFor } from '_common/language';
 
 export const currentLanguage = getLanguage();
 

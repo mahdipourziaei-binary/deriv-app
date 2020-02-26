@@ -1,9 +1,9 @@
 import DocumentUploader from '@binary-com/binary-document-uploader';
+import { FileDropzone, Icon } from '@deriv/components';
+import { localize } from '@deriv/translations';
 import classNames from 'classnames';
 import React from 'react';
-import { FileDropzone, Icon } from '@deriv/components';
 import { WS } from 'Services/ws-methods';
-import { localize } from '@deriv/translations';
 import {
     compressImageFiles,
     readFiles,

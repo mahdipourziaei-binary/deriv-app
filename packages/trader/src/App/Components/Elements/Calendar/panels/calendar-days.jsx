@@ -1,9 +1,9 @@
 import { Popover } from '@deriv/components';
+import { localize } from '@deriv/translations';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { padLeft } from '_common/string_util';
-import { localize } from '@deriv/translations';
 import { getDaysOfTheWeek, week_headers_abbr } from 'Constants/date-time';
 import { addDays, addMonths, daysFromTodayTo, epochToMoment, subDays, subMonths, toMoment } from 'Utils/Date';
 import { CommonPropTypes } from './types';

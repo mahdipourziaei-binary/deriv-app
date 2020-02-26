@@ -1,11 +1,11 @@
+import { Icon } from '@deriv/components';
+import { localize } from '@deriv/translations';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Icon } from '@deriv/components';
 import Fieldset from 'App/Components/Form/fieldset.jsx';
 import InputField from 'App/Components/Form/InputField';
 import { connect } from 'Stores/connect';
-import { localize } from '@deriv/translations';
 
 const Barrier = ({ barrier_1, barrier_2, barrier_count, is_minimized, onChange, validation_errors }) => {
     const barrier_title = barrier_count === 1 ? localize('Barrier') : localize('Barriers');

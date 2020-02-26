@@ -1,6 +1,6 @@
 import ObjectUtils from '@deriv/shared/utils/object';
-import ServerTime from '_common/base/server_time';
 import { localize } from '@deriv/translations';
+import ServerTime from '_common/base/server_time';
 import { WS } from 'Services/ws-methods';
 import { isTimeValid, minDate, toMoment } from 'Utils/Date';
 import { buildBarriersConfig } from './barrier';

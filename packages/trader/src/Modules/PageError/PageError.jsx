@@ -1,7 +1,7 @@
+import { Localize } from '@deriv/translations';
 import PropTypes from 'prop-types';
 import React from 'react';
 import ButtonLink from 'App/Components/Routes/button-link.jsx';
-import { Localize } from '@deriv/translations';
 
 const PageError = ({ buttonOnClick, error_code, messages, header, redirect_label, redirect_url }) => (
     <div className='page-error__container'>

@@ -1,11 +1,11 @@
+import { Icon } from '@deriv/components';
+import { localize } from '@deriv/translations';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { NavLink } from 'react-router-dom';
-import { Icon } from '@deriv/components';
 import { getContractPath } from 'App/Components/Routes/helpers';
-import { localize } from '@deriv/translations';
 
 class ResultOverlay extends React.PureComponent {
     handleClick = e => {

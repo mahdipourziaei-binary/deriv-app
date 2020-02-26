@@ -1,9 +1,9 @@
+import { localize } from '@deriv/translations';
 import PropTypes from 'prop-types';
 import React, { lazy } from 'react';
 import { withRouter, Redirect } from 'react-router-dom';
 import SideMenu from 'App/Components/Elements/SideMenu';
 import { FadeWrapper } from 'App/Components/Animations';
-import { localize } from '@deriv/translations';
 import AppRoutes from 'Constants/routes';
 import { connect } from 'Stores/connect';
 import { WS } from 'Services/ws-methods';

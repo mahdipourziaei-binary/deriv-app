@@ -1,9 +1,9 @@
+import { Button, Dropdown } from '@deriv/components';
+import { localize } from '@deriv/translations';
 // import PropTypes        from 'prop-types';
 import React from 'react';
 import { Formik } from 'formik';
-import { Button, Dropdown } from '@deriv/components';
 import { connect } from 'Stores/connect';
-import { localize } from '@deriv/translations';
 import { WS } from 'Services/ws-methods';
 import {
     account_turnover_list,

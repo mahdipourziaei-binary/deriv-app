@@ -1,12 +1,12 @@
+import { Button, Icon, Money } from '@deriv/components';
+import CurrencyUtils from '@deriv/shared/utils/currency';
+import { localize } from '@deriv/translations';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { NavLink } from 'react-router-dom';
-import { Button, Icon, Money } from '@deriv/components';
-import CurrencyUtils from '@deriv/shared/utils/currency';
 import Shortcode from 'Modules/Reports/Helpers/shortcode';
-import { localize } from '@deriv/translations';
 import { PositionsCardLoader } from 'App/Components/Elements/ContentLoader';
 import ContractTypeCell from './contract-type-cell.jsx';
 import ProgressSlider from './ProgressSlider';

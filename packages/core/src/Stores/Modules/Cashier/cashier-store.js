@@ -1,8 +1,8 @@
-import { action, observable, toJS } from 'mobx';
 import CurrencyUtils from '@deriv/shared/utils/currency';
 import ObjectUtils from '@deriv/shared/utils/object';
-import BinarySocket from '_common/base/socket_base';
 import { localize } from '@deriv/translations';
+import { action, observable, toJS } from 'mobx';
+import BinarySocket from '_common/base/socket_base';
 import { WS } from 'Services';
 import BaseStore from '../../base-store';
 import { getMT5AccountDisplay } from '../../Helpers/client';

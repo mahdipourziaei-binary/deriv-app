@@ -1,6 +1,6 @@
 import CurrencyUtils from '@deriv/shared/utils/currency';
-import { toTitleCase } from '_common/string_util';
 import { localize } from '@deriv/translations';
+import { toTitleCase } from '_common/string_util';
 import { getMarketInformation } from 'Modules/Reports/Helpers/market-underlying';
 import { toMoment } from 'Utils/Date';
 import { getSymbolDisplayName } from '../../Trading/Helpers/active-symbols';

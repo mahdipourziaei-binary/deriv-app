@@ -1,10 +1,10 @@
+import ObjectUtils from '@deriv/shared/utils/object';
+import { localize, Localize } from '@deriv/translations';
 import React from 'react';
 import { WS } from 'Services';
 import { formatDate } from 'Utils/Date';
-import ObjectUtils from '@deriv/shared/utils/object';
 import { getRiskAssessment, isAccountOfType, shouldAcceptTnc, shouldCompleteTax } from '_common/base/client_base';
 import { BinaryLink } from 'App/Components/Routes';
-import { localize, Localize } from '@deriv/translations';
 import routes from 'Constants/routes';
 import { LocalStore, State } from '_common/storage';
 import { urlFor } from '_common/url';

@@ -1,11 +1,11 @@
+import { Button, Dropdown, Icon, Input, Money } from '@deriv/components';
+import { localize, Localize } from '@deriv/translations';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Button, Dropdown, Icon, Input, Money } from '@deriv/components';
 import { Field, Formik, Form } from 'formik';
 import CurrencyUtils from '@deriv/shared/utils/currency';
 import { website_name } from 'App/Constants/app-config';
-import { localize, Localize } from '@deriv/translations';
 import { connect } from 'Stores/connect';
 import { getPreBuildDVRs, validNumber } from 'Utils/Validator/declarative-validation-rules';
 import Loading from '../../../../templates/_common/components/loading.jsx';
