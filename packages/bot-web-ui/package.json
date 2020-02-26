@@ -4,6 +4,12 @@
   "description": "Visual automation for deriv.app",
   "main": "dist/bot-web-ui.main.js",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/.jest"
@@ -72,8 +78,8 @@
     "eslint-loader": "^2.1.2",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.2",
     "file-saver": "^2.0.2",
     "immutable": "^3.8.2",
     "jest": "^24.8.0",
@@ -122,5 +128,6 @@
     "react-render-html": "^0.6.0",
     "react-transition-group": "^4.0.1",
     "smartcharts-beta": "^0.6.2"
-  }
+  },
+  "gitHead": "006fe55a2e37fed580329b3c1c22d14926d25181"
 }

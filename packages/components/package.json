@@ -4,6 +4,12 @@
   "description": "deriv components",
   "main": "lib/index.js",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib"
+  ],
   "jest": {
     "modulePaths": [
       "<rootDir>"
@@ -115,5 +121,6 @@
     "react-tiny-popover": "^3.4.5",
     "react-transition-group": "^4.2.2",
     "tt-react-custom-scrollbars": "^4.2.1-tt2"
-  }
+  },
+  "gitHead": "006fe55a2e37fed580329b3c1c22d14926d25181"
 }

@@ -5,8 +5,14 @@
   "author": "Deriv",
   "license": "Apache-2.0",
   "homepage": "https://github.com/binary-com/deriv-app#readme",
-  "main": "index.js",
+  "main": "utils/index.js",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "utils"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/binary-com/deriv-app.git"
@@ -30,13 +36,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "@babel/polyfill": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/plugin-proposal-export-default-from": "^7.5.2",
     "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.5.5",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
@@ -66,5 +72,6 @@
     "stylelint-webpack-plugin": "^0.10.5",
     "webpack": "^4.37.0",
     "webpack-cli": "^3.3.6"
-  }
+  },
+  "gitHead": "006fe55a2e37fed580329b3c1c22d14926d25181"
 }
