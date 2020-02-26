@@ -49,6 +49,10 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
+    "@deriv/bot-skeleton": "^1.0.0",
+    "@deriv/components": "^1.0.0",
+    "@deriv/shared": "^1.0.0",
+    "@deriv/translations": "^1.0.0",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
@@ -95,12 +99,14 @@
     "webpack-cli": "^3.3.4",
     "webpack-merge-and-include-globally": "^2.1.16"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.4.4",
+  "peerDependencies": {
     "@deriv/bot-skeleton": "^1.0.0",
     "@deriv/components": "^1.0.0",
     "@deriv/shared": "^1.0.0",
-    "@deriv/translations": "^1.0.0",
+    "@deriv/translations": "^1.0.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "classnames": "^2.2.6",
     "commander": "^2.20.0",
     "concat-stream": "^2.0.0",

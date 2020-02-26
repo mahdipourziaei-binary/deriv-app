@@ -1,6 +1,6 @@
 {
   "name": "@deriv/p2p",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "p2p cashier",
   "main": "lib/index.js",
   "private": false,
@@ -30,6 +30,8 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
+    "@deriv/components": "^1.0.0",
+    "@deriv/shared": "^1.0.0",
     "crc-32": "^1.2.0",
     "formik": "^1.5.8",
     "i18next": "^18.0.0",
@@ -41,6 +43,10 @@
     "react-window": "^1.8.5",
     "react-window-infinite-loader": "^1.0.5"
   },
+  "peerDependencies": {
+    "@deriv/components": "^1.0.0",
+    "@deriv/shared": "^1.0.0"
+  },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-decorators": "^7.4.4",
@@ -51,8 +57,6 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
-    "@deriv/components": "^1.0.0",
-    "@deriv/shared": "^1.0.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",

@@ -82,7 +82,7 @@ But for working on any of the other packages (such as Trader, Bot, P2P), perform
 #### How to Clean Packages
 If you intend to remove `node_modules` folder(s) from the projects, please run `npm run clean` from the root of the project.
 
-This runs `lerna clean && rm -rf $(git rev-parse --show-toplevel)/node_modules` under the hood.
+This runs `lerna clean && rimraf $(git rev-parse --show-toplevel)/node_modules` under the hood.
 You can read more on the various lerna commands (and the [`clean` command](https://github.com/lerna/lerna/tree/master/commands/clean#readme)) over at the [Lerna docs](https://github.com/lerna/lerna/).
 
 #### Examples of Script Usage
