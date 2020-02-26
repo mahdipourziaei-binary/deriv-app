@@ -3,7 +3,7 @@
   "name": "@deriv/bot-web-ui",
   "description": "Visual automation for deriv.app",
   "main": "dist/bot-web-ui.main.js",
-  "private": true,
+  "private": false,
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/.jest"

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Visual automation for deriv.app",
   "main": "dist/bot-skeleton.js",
-  "private": true,
+  "private": false,
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/.jest"
