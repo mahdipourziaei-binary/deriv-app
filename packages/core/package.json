@@ -114,7 +114,7 @@
     "@deriv/bot-web-ui": "^1.0.0",
     "@deriv/components": "^1.0.0",
     "@deriv/shared": "^1.0.0",
-    "@deriv/trader": "^3.8.0",
+    "@deriv/trader": "^1.0.0",
     "@deriv/translations": "^1.0.0",
     "event-source-polyfill": "^1.0.5",
     "formik": "^1.5.8",

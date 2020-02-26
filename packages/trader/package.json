@@ -1,6 +1,6 @@
 {
   "name": "@deriv/trader",
-  "version": "3.8.0",
+  "version": "1.0.0",
   "description": "Deriv content",
   "main": "dist/js/trader.main.js",
   "private": false,
