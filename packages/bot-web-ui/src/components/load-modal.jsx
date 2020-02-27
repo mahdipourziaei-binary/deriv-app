@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import React, { useRef } from 'react';
 import { Button, Modal, Tabs, Icon } from '@deriv/components';
 import { localize } from '@deriv/translations';
-import { timeSince } from '@deriv/bot-skeleton';
-import { save_types } from '@deriv/bot-skeleton/src/constants/save-type';
+import { timeSince, save_types } from '@deriv/bot-skeleton';
 import { connect } from '../stores/connect';
 import '../assets/sass/load-modal.scss';
 
