@@ -47,6 +47,16 @@ commands:
           name: "build core"
           command: node_modules/lerna/cli.js exec --scope @deriv/core -- npm run build
 
+  npm_deploy_folder:
+    description: "Deploy to Test Link"
+    steps:
+      - run:
+          name: "Run deploy:folder"
+          command: |
+            git config --global user.email "$GIT_AUTHOR_EMAIL"
+            git config --global user.name "$GIT_AUTHOR_NAME"
+            npm run deploy:folder br_${CIRCLE_BRANCH}
+
   docker:
     description: "Build and Push image to docker hub"
     steps:
@@ -102,7 +112,21 @@ jobs:
       - docker
       - k8s_deploy_production
 
+  deploy_test_branch:
+    docker:
+      - image: circleci/node:11.15.0-stretch
+    steps:
+      - git_checkout_from_cache
+      - npm_install
+      - npm_deploy_folder
+
 workflows:
+  deploy_test_branch:
+    jobs:
+      - deploy_test_branch:
+          filters:
+            branches:
+              ignore: /dev|master/
   release_staging:
     jobs:
       - release_staging:
