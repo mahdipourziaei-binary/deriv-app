@@ -759,6 +759,8 @@
         margin-bottom: 1.6rem; }
       .account-form__personal-details .dc-checkbox__label {
         font-size: 1.2rem; }
+      .account-form__personal-details .dc-select-native__placeholder {
+        background-color: var(--general-main-1); }
       .account-form__personal-details .date-of-birth-datepicker .datepicker-native__input {
         height: 3.8rem; } }
     .account-form__occupation .dc-native-select__select,
@@ -3901,6 +3903,7 @@
 
 /** @define result */
 .result__caption {
+  text-transform: capitalize;
   font-size: 1.6em;
   font-weight: bold;
   display: flex;
